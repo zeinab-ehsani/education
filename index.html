@@ -7,8 +7,82 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <!-- start menu -->
-     
+<header class="relative overflow-hidden  bg-center bg-no-repeat   w-full  " style="background-image: url('assets/img/img-home/Rectangle\ 4.svg')">
+               
+               <!-- start menu -->
+<nav class="navbar px-4 md:px-8 xl:px-16 2xl:px-24 text-white">
+
+  <div class="navbar-start">
+    <div class="dropdown lg:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+      <ul tabindex="0" class="menu dropdown-content bg-base-100 text-base-content rounded-box z-10 mt-3 w-52 p-2 shadow">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <a href="index.html" class="text-xl md:text-2xl font-bold"><img src="./assets/img/img-home/logo-header.svg"></a>
+  </div>
+
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal gap-2 text-sm">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-end gap-1 md:gap-2">
+    <button id="lang-btn" class="btn btn-ghost btn-sm md:btn-md">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-globe preview-icon text-white">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
+
+    </button>
+
+    <button id="theme-btn" class="btn btn-ghost btn-circle btn-sm md:btn-md" aria-label="Change theme">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="swap-off lucide lucide-sun preview-icon text-white ">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+              </svg>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-down preview-icon hidden md:block">
+                <path d="m6 9 6 6 6-6" />
+              </svg> -->
+    </button>
+
+    <a href="#" class="btn btn-sm md:btn-md rounded-full border-0 bg-white text-[#5B5B5B] hover:bg-white/90">Login</a>
+    <a href="#" class="btn btn-sm md:btn-md rounded-full border-0 bg-white/30 text-white hover:bg-white/40 hidden sm:inline-flex">Sign Up</a>
+  </div>
+
+</nav>
+
      <!-- end menu -->
+
+
+
+     </header>
 </body>
 </html>
