@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
@@ -22,11 +22,11 @@
 
       </div>
       <ul tabindex="0" class="menu dropdown-content bg-base-100 text-base-content rounded-box z-10 mt-3 w-52 p-2 shadow">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a class="text-white" href="index.html">Home</a></li>
+        <li><a class="text-white" href="#">Courses</a></li>
+        <li><a class="text-white" href="#">Careers</a></li>
+        <li><a class="text-white" href="#">Blog</a></li>
+        <li><a class="text-white" href="#">About Us</a></li>
       </ul>
     </div>
     <a href="index.html" class="text-xl md:text-2xl font-bold"><img src="./assets/img/img-home/logo-header.svg"></a>
@@ -34,11 +34,11 @@
 
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal gap-2 text-sm">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Courses</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About Us</a></li>
+      <li><a  class="text-[18px] md:text-[20px] xl:text-[22px] text-white" href="index.html">Home</a></li>
+      <li><a  class="text-[18px] md:text-[20px] xl:text-[22px] text-white" href="#">Courses</a></li>
+      <li><a  class="text-[18px] md:text-[20px] xl:text-[22px] text-white" href="#">Careers</a></li>
+      <li><a  class="text-[18px] md:text-[20px] xl:text-[22px] text-white" href="#">Blog</a></li>
+      <li><a  class="text-[18px] md:text-[20px] xl:text-[22px] text-white" href="#">About Us</a></li>
     </ul>
   </div>
 
@@ -57,8 +57,8 @@
   </button>
 
   <ul tabindex="0" class="dropdown-content menu bg-base-100 text-base-content rounded-box z-20 mt-3 w-40 p-2 shadow">
-    <li><button data-set-theme="light">english</button></li>
-    <li><button data-set-theme="dark">فارسی</button></li>
+    <li><button >english</button></li>
+    <li><button >فارسی</button></li>
   </ul>
 </div>
 
@@ -80,9 +80,9 @@
   </button>
 
   <ul tabindex="0" class="dropdown-content menu bg-base-100 text-base-content rounded-box z-20 mt-3 w-40 p-2 shadow">
-    <li><button data-set-theme="light">Light</button></li>
-    <li><button data-set-theme="dark">Dark</button></li>
-    <li><button data-set-theme="cupcake">Cupcake</button></li>
+    <li><button id="light" data-set-theme="light">Light</button></li>
+    <li><button id="dark" data-set-theme="dark">Dark</button></li>
+    <li><button id="cupcake" data-set-theme="cupcake">Cupcake</button></li>
   </ul>
 </div>
  <div class="dropdown dropdown-end sm:hidden">
@@ -90,15 +90,15 @@
     Login
   </button>
   <ul tabindex="0" class="dropdown-content menu bg-base-100 text-base-content rounded-box z-20 mt-3 w-36 p-2 shadow">
-    <li><a href="login.html">Login</a></li>
-    <li><a href="signup.html">Sign Up</a></li>
+    <li><a  class="text-[18px] md:text-[20px] xl:text-[22px]"  href="login.html">Login</a></li>
+    <li><a  class="text-[18px] md:text-[20px] xl:text-[22px]" href="signup.html">Sign Up</a></li>
   </ul>
 </div>
 
-<a href="login.html" class="btn btn-sm md:btn-md rounded-full border-0 bg-white text-[#5B5B5B] hover:bg-white/90 hidden sm:inline-flex">
+<a  href="login.html" class="btn btn-sm md:btn-md xl:btn-lg  rounded-full border-0 bg-white text-[#5B5B5B] hover:bg-white/90 hidden sm:inline-flex text-[18px] md:text-[20px] xl:text-[20px] font-medium">
   Login
 </a>
-<a href="signup.html" class="btn btn-sm md:btn-md rounded-full border-0 bg-white/30 text-white hover:bg-white/40 hidden sm:inline-flex">
+<a href="signup.html" class="btn btn-sm md:btn-md xl:btn-lg rounded-full border-0 bg-white/30 text-white hover:bg-white/40 hidden sm:inline-flex text-[18px] md:text-[20px] xl:text-[20px] font-medium">
   Sign Up
 </a>
 </div>
@@ -107,9 +107,50 @@
 </nav>
 
      <!-- end menu -->
+<section class="hero flex flex-row">
 
+<div class="hero-left flex  flex-col gap-[12px] md:gap-[20px] xl:gap-[34px]"><h3 class="text-[28px] md:text-[40px] xl:text-[54px] font-bold text-white "><span class="text-[28px] md:text-[40px] xl:text-[54px] font-bold text-[#f48c06]">Studying</span> Online is now
+  <br>
+  much easier</h3>
+<p class="text-[16px] md:text-[20px] xl:text-[24px] leading-relaxed text-white">TOTC is an interesting platform that will teach <br> you in more an interactive way</p>
+<div class="flex flex-row items-center gap-2 md:gap-2.5">
+  <a href=""
+     class="bg-white/30 rounded-[80px] font-semibold text-white whitespace-nowrap
+            text-[16px] md:text-[20px] xl:text-[24px]
+            px-[20px] py-[14px] md:px-[28px] md:py-[22px] xl:px-[38px] xl:py-[32px]">
+    Join for free
+  </a>
+
+  <span class="rounded-full bg-white shrink-0 flex items-center justify-center
+               w-[48px] h-[48px] md:w-[64px] md:h-[64px] xl:w-[80px] xl:h-[80px]">
+    <img class="w-[30%]" src="./assets/img/img-home/3blue.svg" alt="">
+  </span>
+
+  <span class="text-[#252641] text-[14px] md:text-[20px] xl:text-[24px]">
+    Watch how it works
+  </span>
+</div></div>
+<div class="hero-right flex  flex-col"></div>
+</section>
 
 
      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="./assets/js/main.js"></script>
 </body>
 </html>
