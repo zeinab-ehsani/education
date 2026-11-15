@@ -6,13 +6,7 @@
     --font-sans: "Poppins", "Estedad", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-green-50: oklch(98.2% 0.018 155.826);
-    --color-green-200: oklch(92.5% 0.084 155.995);
-    --color-green-300: oklch(87.1% 0.15 154.449);
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -22,6 +16,7 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -1475,9 +1470,6 @@
   .relative {
     position: relative;
   }
-  .inset-0 {
-    inset: 0px;
-  }
   @layer daisyui.l1.l2 {
     .dropdown-right {
       --anchor-h: right;
@@ -1526,26 +1518,14 @@
       }
     }
   }
-  .top-0 {
-    top: 0px;
-  }
   .top-2 {
     top: calc(var(--spacing) * 2);
-  }
-  .top-\[2\%\] {
-    top: 2%;
-  }
-  .top-\[18\%\] {
-    top: 18%;
   }
   .top-\[20\%\] {
     top: 20%;
   }
   .top-\[25\%\] {
     top: 25%;
-  }
-  .top-\[30\%\] {
-    top: 30%;
   }
   .top-\[48\%\] {
     top: 48%;
@@ -1556,47 +1536,14 @@
   .right-\[-6px\] {
     right: -6px;
   }
-  .right-\[-px\] {
-    right: -px;
-  }
-  .right-\[10\%\] {
-    right: 10%;
-  }
   .right-\[20\%\] {
     right: 20%;
-  }
-  .right-\[30\%\] {
-    right: 30%;
-  }
-  .-bottom-\[80px\] {
-    bottom: calc(80px * -1);
-  }
-  .bottom-0 {
-    bottom: 0px;
-  }
-  .bottom-\[8\%\] {
-    bottom: 8%;
-  }
-  .bottom-\[10\%\] {
-    bottom: 10%;
   }
   .bottom-\[15\%\] {
     bottom: 15%;
   }
   .left-0 {
     left: 0px;
-  }
-  .left-\[0\%\] {
-    left: 0%;
-  }
-  .left-\[20\%\] {
-    left: 20%;
-  }
-  .left-\[20\] {
-    left: 20;
-  }
-  .left-\[30\%\] {
-    left: 30%;
   }
   .left-\[70\%\] {
     left: 70%;
@@ -1708,6 +1655,18 @@
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-\[16px\] {
+    margin-top: 16px;
+  }
+  .mt-\[96\] {
+    margin-top: 96;
+  }
+  .mt-\[96px\] {
+    margin-top: 96px;
+  }
+  .mt-\[134px\] {
+    margin-top: 134px;
   }
   @layer daisyui.l1.l2.l3 {
     .badge {
@@ -1853,20 +1812,11 @@
   .h-\[70px\] {
     height: 70px;
   }
-  .h-\[95\%\] {
-    height: 95%;
-  }
   .h-\[380px\] {
     height: 380px;
   }
-  .h-\[900px\] {
-    height: 900px;
-  }
   .h-auto {
     height: auto;
-  }
-  .h-full {
-    height: 100%;
   }
   .min-h-\[700px\] {
     min-height: 700px;
@@ -1904,17 +1854,17 @@
   .w-\[70px\] {
     width: 70px;
   }
-  .w-auto {
-    width: auto;
-  }
   .w-full {
     width: 100%;
   }
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
+  .max-w-\[1200px\] {
+    max-width: 1200px;
+  }
   .max-w-\[1920px\] {
     max-width: 1920px;
-  }
-  .max-w-none {
-    max-width: none;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1997,6 +1947,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
   }
@@ -2014,6 +1967,12 @@
   }
   .gap-\[12px\] {
     gap: 12px;
+  }
+  .gap-\[32\] {
+    gap: 32;
+  }
+  .gap-\[32px\] {
+    gap: 32px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -2051,9 +2010,6 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-\[\#FBECD7\] {
-    border-color: #FBECD7;
-  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -2081,9 +2037,6 @@
   .bg-base-100 {
     background-color: var(--color-base-100);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -2099,12 +2052,6 @@
       background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
     }
   }
-  .bg-white\/90 {
-    background-color: color-mix(in srgb, #fff 90%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
-    }
-  }
   @layer daisyui.l1.l2.l3 {
     .btn-ghost {
       --btn-bg: #0000;
@@ -2115,17 +2062,8 @@
       --btn-shadow: 0 0 0 0 oklch(0% 0 0/0);
     }
   }
-  .bg-\[url\(\'\.\/images\/header-bg\.png\'\)\] {
-    background-image: url('./images/header-bg.png');
-  }
-  .bg-\[url\(\'assets\/img\/img-home\/Header2\.svg\'\)\] {
-    background-image: url('assets/img/img-home/Header2.svg');
-  }
   .bg-\[length\:100\%_auto\] {
     background-size: 100% auto;
-  }
-  .bg-contain {
-    background-size: contain;
   }
   .bg-cover {
     background-size: cover;
@@ -2145,9 +2083,6 @@
   .mask-repeat {
     mask-repeat: repeat;
   }
-  .object-bottom {
-    object-position: bottom;
-  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -2162,6 +2097,9 @@
   }
   .px-\[20px\] {
     padding-inline: 20px;
+  }
+  .px-\[24px\] {
+    padding-inline: 24px;
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -2180,6 +2118,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -2201,8 +2142,17 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
   .text-\[28px\] {
     font-size: 28px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
+  .text-\[96px\] {
+    font-size: 96px;
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -2211,6 +2161,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -2226,6 +2180,12 @@
   .text-\[\#5B5B5B\] {
     color: #5B5B5B;
   }
+  .text-\[\#010514CC\] {
+    color: #010514CC;
+  }
+  .text-\[\#010514\] {
+    color: #010514;
+  }
   .text-\[\#252641\] {
     color: #252641;
   }
@@ -2237,6 +2197,9 @@
   }
   .text-\[\#f48c06\] {
     color: #f48c06;
+  }
+  .text-\[2\] {
+    color: 2;
   }
   .text-base-content {
     color: var(--color-base-content);
@@ -2252,6 +2215,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-80 {
+    opacity: 80%;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -2297,9 +2263,6 @@
       --size: calc(var(--size-field, 0.25rem) * 8);
     }
   }
-  .\[clip-path\:inset\(0_-100px_0_-100px\)\] {
-    clip-path: inset(0 -100px 0 -100px);
-  }
   @media (hover: hover) {
     .hover\:bg-white\/40:hover {
       background-color: color-mix(in srgb, #fff 40%, transparent);
@@ -2327,9 +2290,6 @@
     }
   }
   @media (width >= 48rem) {
-    .md\:right-\[5\%\] {
-      right: 5%;
-    }
     .md\:left-\[-5\%\] {
       left: -5%;
     }
@@ -2345,20 +2305,8 @@
     .md\:h-\[58px\] {
       height: 58px;
     }
-    .md\:h-\[60px\] {
-      height: 60px;
-    }
-    .md\:h-\[64px\] {
-      height: 64px;
-    }
     .md\:h-\[500px\] {
       height: 500px;
-    }
-    .md\:h-\[px\] {
-      height: px;
-    }
-    .md\:h-full {
-      height: 100%;
     }
     .md\:min-h-0 {
       min-height: 0px;
@@ -2371,12 +2319,6 @@
     }
     .md\:w-\[58px\] {
       width: 58px;
-    }
-    .md\:w-\[60px\] {
-      width: 60px;
-    }
-    .md\:w-\[64px\] {
-      width: 64px;
     }
     .md\:w-auto {
       width: auto;
@@ -2414,17 +2356,8 @@
     .md\:px-\[20px\] {
       padding-inline: 20px;
     }
-    .md\:px-\[28px\] {
-      padding-inline: 28px;
-    }
-    .md\:py-\[2px\] {
-      padding-block: 2px;
-    }
     .md\:py-\[20px\] {
       padding-block: 20px;
-    }
-    .md\:py-\[22px\] {
-      padding-block: 22px;
     }
     .md\:pt-16 {
       padding-top: calc(var(--spacing) * 16);
@@ -2432,9 +2365,6 @@
     .md\:text-2xl {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-    .md\:text-\[1px\] {
-      font-size: 1px;
     }
     .md\:text-\[16px\] {
       font-size: 16px;
@@ -2468,20 +2398,11 @@
     }
   }
   @media (width >= 80rem) {
-    .xl\:top-4 {
-      top: calc(var(--spacing) * 4);
-    }
-    .xl\:top-6 {
-      top: calc(var(--spacing) * 6);
-    }
     .xl\:top-8 {
       top: calc(var(--spacing) * 8);
     }
     .xl\:h-\[18px\] {
       height: 18px;
-    }
-    .xl\:h-\[20px\] {
-      height: 20px;
     }
     .xl\:h-\[50px\] {
       height: 50px;
@@ -2494,9 +2415,6 @@
     }
     .xl\:w-\[18px\] {
       width: 18px;
-    }
-    .xl\:w-\[20px\] {
-      width: 20px;
     }
     .xl\:w-\[50px\] {
       width: 50px;
