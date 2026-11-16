@@ -69,3 +69,24 @@ dark.addEventListener("click", function () {
 cupcake.addEventListener("click", function () {
     setTheme("bg-[#faf7f5]", "text-black")
 })
+
+
+
+
+const modal = document.getElementById('video_modal');
+const frame = modal.querySelector('iframe');
+const src = frame.src;
+
+modal.addEventListener('close', () => {
+  frame.src = '';
+  frame.src = src;
+});
+
+
+const localModal = document.getElementById('local_modal');
+const localVideo = document.getElementById('local_video');
+
+localModal.addEventListener('close', () => {
+  localVideo.pause();
+  localVideo.currentTime = 0;
+});

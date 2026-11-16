@@ -137,10 +137,26 @@
           <a href="#"
             class="bg-white/30 rounded-[80px] font-semibold text-white whitespace-nowrap text-[16px] md:text-[17px] xl:text-[24px] px-[20px] py-[14px] md:px-[20px] md:py-[20px] xl:px-[38px] xl:py-[32px]">Join
             for free</a>
-          <span
-            class="rounded-full bg-white shrink-0 flex items-center justify-center w-[48px] h-[48px] md:w-[58px] md:h-[58px] xl:w-[80px] xl:h-[80px]">
+
+
+<button onclick="local_modal.showModal()"
+  class="rounded-full bg-white shrink-0 flex items-center justify-center w-[48px] h-[48px] md:w-[58px] md:h-[58px] xl:w-[80px] xl:h-[80px]" text-base md:text-lg xl:text-xl">
             <img class="w-[30%]" src="./assets/img/img-home/3blue.svg" alt="">
-          </span>
+</button>
+
+<dialog id="local_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden">
+    <video id="local_video" class="w-full aspect-video" controls>
+      <source src="./assets/Video/Video1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
+
+
+
+
+
           <span class="text-[#252641] text-[14px] md:text-[17px] xl:text-[24px]">Watch how it works</span>
         </div>
       </div>
@@ -359,10 +375,167 @@
 
 
 
-  
+  <section class="you-can-do mt-20 md:mt-28 xl:mt-36 2xl:mt-40 p-5 md:h-auto xl:h-[512px] w-[90%] md:w-[85%] xl:w-[80%] mx-auto">
+  <div class="container container-you w-full flex flex-col md:flex-row items-center gap-6 md:gap-8 xl:gap-10">
+
+    <div class="you-can-do-text flex-1 relative">
+  <div class="absolute -top-0 -left-3 md:-top-3 md:-left-4 xl:-top-4 xl:-left-5 2xl:-top-4 2xl:-left-6
+              w-6 h-6 md:w-7 md:h-7 xl:w-8 xl:h-8 2xl:w-[60px] 2xl:h-[60px]
+              bg-[#33EFA0] rounded-full -z-10"></div>
 
 
 
+
+
+
+
+<dialog id="video_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden">
+    <div class="aspect-video">
+      <iframe class="w-full h-full"
+        src="https://www.aparat.com/video/video/embed/videohash/shcxyhl/vt/frame"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+
+      <h2 class="you-can-do-title font-semibold text-xl md:text-2xl xl:text-3xl 2xl:text-[36px] text-[#2F327D]">
+        Everything you can do in a physical classroom,
+        <span class="text-[#49bbbd]">you can do with TOTC</span>
+      </h2>
+
+      <p class="you-can-do-desc mt-4 md:mt-5 2xl:mt-6 text-[#696984]">
+        TOTC’s school management software helps traditional and online schools
+        manage scheduling, attendance, payments and virtual classrooms all in
+        one secure cloud-based system.
+      </p>
+
+      <a href="./learn-more.html" class="you-can-do-link inline-block mt-4 md:mt-5 2xl:mt-6 text-[#696984]">
+        Learn more
+      </a>
+       <div class="absolute top-1/2 -right-3 md:-right-4 xl:-right-11 2xl:-right-6
+              w-2 h-2 md:w-2.5 md:h-2.5 xl:w-3 xl:h-3 2xl:w-[20px] 2xl:h-[20px]
+              bg-[#33EFA0] rounded-full"></div>
+    </div>
+
+    <div class="you-can-do-media flex-1 img-class relative">
+<!-- <div class="absolute rounded-[20px]  top-0 left-[-10%]"></div> -->
+  <div class="absolute -top-3 -left-3 md:-top-4 md:-left-4 xl:-top-5 xl:-left-5 2xl:-top-6 2xl:-left-6
+              w-16 h-16 md:w-20 md:h-20 xl:w-28 xl:h-28 2xl:w-[138px] 2xl:h-[138px]
+             bg-[#23BDEE] rounded-[20px] -z-10"></div>
+
+     
+             <img src="./assets/img/img-home/class.svg" alt="Classroom" class="w-full rounded-xl 2xl:rounded-[20px] img-class">
+ <button onclick="video_modal.showModal()"
+    class="absolute inset-0 m-auto w-16 h-16 md:w-20 md:h-20 xl:w-28 xl:h-28 2xl:w-[90px] 2xl:h-[90px] rounded-full bg-white/90 flex items-center justify-center"
+    aria-label="Play video">
+            <img class="w-[30%]" src="./assets/img/img-home/3blue.svg" alt="">
+  </button>
+
+
+
+
+              <div class="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 xl:-bottom-5 xl:-right-5 2xl:-bottom-6 2xl:-right-6
+              w-28 h-28 md:w-36 md:h-36 xl:w-48 xl:h-48 2xl:w-[231px] 2xl:h-[231px]
+              bg-[#33EFA0] rounded-[20px] -z-10"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="our-features flex flex-col gap-3 md:gap-4 2xl:gap-5 mt-20 md:mt-28 xl:mt-36 2xl:mt-40 items-center px-4 text-center">
+  <h1 class="text-2xl md:text-3xl xl:text-[32px] 2xl:text-[36px] text-[#2F327D] font-bold">
+    Our
+    <span class="text-[#49bbbd]">
+      Features
+    </span>
+  </h1>
+  <p class="text-base md:text-lg xl:text-xl 2xl:text-2xl text-p">
+    This very extraordinary feature, can make learning activities more efficient
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="ui-classroom py-10 md:py-12 xl:py-16 mt-12 md:mt-16 xl:mt-20 2xl:mt-24 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
+  <div class="container-ui w-full px-3 flex flex-col  lg:flex-row justify-between items-center gap-8 md:gap-8 xl:gap-11">
+
+    <div class="ui-media relative w-full md:w-[100%]   aspect-[430/305]">
+
+      <div class="absolute left-[2%] top-[11%] w-[84%] h-[72%] bg-gray-100 rounded-xl 2xl:rounded-[20px] ui-media-details"></div>
+
+      <img src="./assets/img/img-home/eveny.svg" alt="Instructor" class="absolute left-[11%] top-[25%] w-[27%]">
+
+      <div class="absolute left-[7%] top-[68%] flex flex-row gap-2 md:gap-3 xl:gap-4">
+        <button class="rounded-full px-3 md:px-4 xl:px-6 bg-[#3465E1] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Present</button>
+        <button class="rounded-full flex flex-row-reverse items-center justify-center gap-1.5 px-3 md:px-4 xl:px-6 bg-[#E13468] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Call
+          <img src="./assets/img/img-home/phone 1.svg" alt="">
+        </button>
+      </div>
+
+      <img src="./assets/img/img-home/tamara.svg" alt="Tamara" class="absolute left-[51%] top-[25%] w-[18%]">
+      <img src="./assets/img/img-home/humbert.svg" alt="Humbert" class="absolute left-[51%] top-[53%] w-[18%]">
+
+      <img src="./assets/img/img-home/adam.svg" alt="Adam" class="absolute left-[77%] top-[19%] w-[22%]">
+      <img src="./assets/img/img-home/patrica.svg" alt="Patricia" class="absolute left-[72%] top-[60%] w-[26%]">
+      <img src="./assets/img/img-home/circle22.svg" class="absolute top-[40%] right-[40%]" alt="">
+    </div>
+
+    <div class="ui-text w-full  md:w-[100%]">
+      <h2 class="ui-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
+        A <span class="text-[#49bbbd]">user interface</span> designed for the classroom
+      </h2>
+
+      <ul class="ui-list flex flex-col gap-5 md:gap-7 xl:gap-9 2xl:gap-10 mt-6 md:mt-8 xl:mt-10 2xl:mt-12">
+        <li class="ui-item flex items-center gap-4">
+          <span class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+            <img src="./assets/img/img-home/Group 72.svg" alt="">
+          </span>
+          <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">Teachers don’t get lost in the grid view and have a dedicated Podium space.</p>
+        </li>
+
+        <li class="ui-item flex items-center gap-4">
+          <span class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+            <img src="./assets/img/img-home/Group 73.svg" alt="">
+          </span>
+          <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">TA’s and presenters can be moved to the front of the class.</p>
+        </li>
+
+        <li class="ui-item flex items-center gap-4">
+          <span class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+            <img src="./assets/img/img-home/users 2.svg" alt="">
+          </span>
+          <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">Teachers can easily see all students and class data at one time.</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
 
 
