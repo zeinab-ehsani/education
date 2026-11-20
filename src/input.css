@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/en/Poppins-Regular.ttf") format("truetype");

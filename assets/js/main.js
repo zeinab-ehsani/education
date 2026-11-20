@@ -1,34 +1,36 @@
 let pairs = [
-      ["bg-white", "bg-[#0A0A0A]"],
+  ["bg-white", "bg-[#0A0A0A]"],
 
-    // ["bg-white", "bg-[#161A20]"],
-    ["bg-bg-blue", "bg-[#1B2A41]"],
-    ["text-dark2", "text-[#f5f5f5]"],
-        ["text-dark", "text-[#ff1493]"],
+  // ["bg-white", "bg-[#161A20]"],
+  ["bg-bg-blue", "bg-[#1B2A41]"],
+  ["text-dark2", "text-[#f5f5f5]"],
+  ["text-dark", "text-[#ff1493]"],
 
-    // ["text-dark", "text-[#f5f5f5]"],
-    ["text-[#010514]", "text-[#f5f5f5]"],
-    ["text-[#010514CC]", "text-[#f5f5f5CC]"],
+  // ["text-dark", "text-[#f5f5f5]"],
+  ["text-[#010514]", "text-[#f5f5f5]"],
+  ["text-[#010514CC]", "text-[#f5f5f5CC]"],
 
-        //  ["text-white", "text-[#ff1493]"],
+  //  ["text-white", "text-[#ff1493]"],
 
-     ["text-white", "text-[#161A20]"],
+  ["text-white", "text-[#161A20]"],
 ]
 
 let groups = pairs.map(function (pair) {
-    return document.querySelectorAll("." + CSS.escape(pair[0]))
+  return document.querySelectorAll("." + CSS.escape(pair[0]))
 })
 
 dark.addEventListener("click", function () {
-    pairs.forEach(function (pair, i) {
-        groups[i].forEach(el => el.classList.replace(pair[0], pair[1]))
-    })
+    document.documentElement.setAttribute("data-theme", "dark")
+  pairs.forEach(function (pair, i) {
+    groups[i].forEach(el => el.classList.replace(pair[0], pair[1]))
+  })
 })
 
 light.addEventListener("click", function () {
-    pairs.forEach(function (pair, i) {
-        groups[i].forEach(el => el.classList.replace(pair[1], pair[0]))
-    })
+   document.documentElement.setAttribute("data-theme", "light")
+  pairs.forEach(function (pair, i) {
+    groups[i].forEach(el => el.classList.replace(pair[1], pair[0]))
+  })
 })
 
 
@@ -229,10 +231,15 @@ loadBooks();
 
 function createCard(book) {
   return `
-     <div class="details-book1 flex flex-col lg:flex-row border-[3px] border-[#599BA9] shrink-0 w-[300px] md:w-[460px] xl:w-[560px] 2xl:w-[684px] p-3 md:p-4 2xl:p-5 bg-white gap-4 md:gap-6 xl:gap-8 2xl:gap-10 rounded-[30px]">
-         <img class="w-full lg:w-[40%] " src="${book.img}" alt="${book.titleDetails}">
-         <div class="w-full lg:w-[50%] flex flex-col gap-1.5 justify-between">
-           <h1 class="text-lg md:text-xl xl:text-3xl 2xl:text-[36px] font-bold title-details">${book.titleDetails}</h1>
+     <div class="details-book1  relative z-20 flex  lg:flex-row border-[3px] border-[#599BA9] shrink-0 w-[100%] md:w-[100%] lg:w-[440px]  xl:w-[560px] 2xl:w-[684px] p-3 md:p-4 2xl:p-5  gap-4 md:gap-6 xl:gap-8 2xl:gap-10 rounded-[30px] bg-white">
+
+         <img
+  class="w-[45%] h-full md:w-[40%] lg:w-[40%] lg:aspect-[3/4] lg:object-cover rounded-xl"
+  src="${book.img}"
+  alt="${book.titleDetails}"
+>
+         <div class="w-full  flex flex-col gap-1.5 justify-between">
+           <h1 class="text-lg md:text-xl xl:text-2xl 2xl:text-[36px] font-bold title-details">${book.tabTitle}</h1>
           <p class="text-details text-sm md:text-base xl:text-xl 2xl:text-[22px] text-[#696984]">${book.textDetails}</p>
            <span class="flex flex-row justify-between items-center">
             <span class="text-[#FFC107] text-sm md:text-base xl:text-lg">
@@ -260,20 +267,22 @@ bookImages.forEach((img) => {
     if (!isOpen) {
       box.innerHTML = createCard(book);
 
- 
-      let  titleDetails=document.querySelectorAll(".title-details")
 
-      titleDetails.forEach((elem)=>{
-        let text=elem.textContent.trim();
-        elem.textContent=text.slice(0,15)+".."
+      let titleDetails = document.querySelectorAll(".title-details")
+
+      titleDetails.forEach((elem) => {
+        let text = elem.textContent.trim();
+        elem.textContent = text.slice(0, 15) + ".."
       })
 
-      let textDetails=document.querySelectorAll(".text-details")
-      textDetails.forEach((elem2)=>{
+      let textDetails = document.querySelectorAll(".text-details");
 
-        let text2=elem2.textContent.trim();
-        elem2.textContent=text2.slice(0,40)+"..."
-      })
+      let maxLength = window.innerWidth < 640 ? 45 : 100 ;
+
+      textDetails.forEach((elem2) => {
+        let text2 = elem2.textContent.trim();
+        elem2.textContent = text2.slice(0, maxLength) + "...";
+      });
     }
   });
 });
