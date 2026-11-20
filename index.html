@@ -4,11 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>Home</title>
   <link rel="stylesheet" href="./src/output.css">
+
+
+
+
+
 </head>
 
-<body>
+<body class="bg-white text-dark2">
   <!-- <header class="relative overflow-hidden   bg-center bg-no-repeat   w-full  "
     style="background-image: url('assets/img/img-home/Rectangle\ 4.svg')"> -->
 
@@ -139,19 +145,20 @@
             for free</a>
 
 
-<button onclick="local_modal.showModal()"
-  class="rounded-full bg-white shrink-0 flex items-center justify-center w-[48px] h-[48px] md:w-[58px] md:h-[58px] xl:w-[80px] xl:h-[80px]" text-base md:text-lg xl:text-xl">
+          <button onclick="local_modal.showModal()"
+            class="rounded-full bg-white shrink-0 flex items-center justify-center w-[48px] h-[48px] md:w-[58px] md:h-[58px] xl:w-[80px] xl:h-[80px]"
+            text-base md:text-lg xl:text-xl">
             <img class="w-[30%]" src="./assets/img/img-home/3blue.svg" alt="">
-</button>
+          </button>
 
-<dialog id="local_modal" class="modal">
-  <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden">
-    <video id="local_video" class="w-full aspect-video" controls>
-      <source src="./assets/Video/Video1.mp4" type="video/mp4">
-    </video>
-  </div>
-  <form method="dialog" class="modal-backdrop"><button>close</button></form>
-</dialog>
+          <dialog id="local_modal" class="modal">
+            <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden">
+              <video id="local_video" class="w-full aspect-video" controls>
+                <source src="./assets/Video/Video1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <form method="dialog" class="modal-backdrop"><button>close</button></form>
+          </dialog>
 
 
 
@@ -223,7 +230,8 @@
       <h2
         class="success-title text-[24px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-bold text-[#010514]">
         Our Success</h2>
-      <p class="success-desc text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] mt-[10px] md:mt-[13px] xl:mt-[16px] max-w-[600px] mx-auto text-[#010514CC] opacity-80">
+      <p
+        class="success-desc text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] mt-[10px] md:mt-[13px] xl:mt-[16px] max-w-[600px] mx-auto text-[#010514CC] opacity-80">
         Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida.
         Adipiscing a quis ultrices eu ornare tristique vel nisl orci.
       </p>
@@ -278,8 +286,10 @@
     <div class="container mx-auto  w-[100%] ">
 
       <div class="all-in-one-header   text-center max-w-3xl w-[100%] mx-auto ">
-        <h2 class="font-bold text-[24px] sm:text-[28px] md:text-[30px] lg:text-[33px] xl:text-[36px]]  text-[#2F327D]">
-          All-In-One <span class="text-[#00CBB8] text-[24px] sm:text-[28px] md:text-[30px] lg:text-[33px] xl:text-[36px] font-bold">Cloud Software.</span>
+        <h2 class="font-bold text-[24px] sm:text-[28px] md:text-[30px] lg:text-[33px] xl:text-[36px]  text-[#2F327D]">
+          All-In-One <span
+            class="text-[#00CBB8] text-[24px] sm:text-[28px] md:text-[30px] lg:text-[33px] xl:text-[36px] font-bold">Cloud
+            Software.</span>
         </h2>
         <p class="mt-4 text-[18px] sm:text-[19px] md:text-[21px] lg:text-[22px] xl:text-[24px] text-[#696984] ">
           TOTC is one powerful online software suite that combines all the tools
@@ -287,31 +297,38 @@
         </p>
       </div>
 
-      <div class="feature-list flex flex-col sm:flex-col  md:flex-col lg:flex-row gap-12 md:gap-6 xl:gap-[50px] 2xl:gap-[60px] mt-[60px] sm:mt-[75px] md:mt-[90px] lg:mt-[105px] xl:mt-[120px] ">
+      <div
+        class="feature-list flex flex-col sm:flex-col  md:flex-col lg:flex-row gap-12 md:gap-6 xl:gap-[50px] 2xl:gap-[60px] mt-[60px] sm:mt-[75px] md:mt-[90px] lg:mt-[105px] xl:mt-[120px] ">
 
         <div
-          class="feature-card flex flex-col items-center justify-center  relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_rgba(38,45,118,0.08)] pt-14 pb-8 px-6 text-center">
+          class="feature-card flex flex-col items-center justify-center  relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_#ff1493] pt-14 pb-8 px-6 text-center">
 
-          <h3 class="font-semibold text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[#2F327D]">Online Billing, Invoicing, &amp; Contracts</h3>
+          <h3
+            class="font-semibold text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[#2F327D]">
+            Online Billing, Invoicing, &amp; Contracts</h3>
           <p class="mt-4 text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] xl:text-[20px] text-[#696984]">
             Simple and secure control of your organization's financial and legal
             transactions. Send customized invoices and contracts
           </p>
-<span class="absolute w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px] rounded-[50%] bg-[#5B72EE] top-[-18%] left-1/2 -translate-x-1/2 flex justify-center items-center">
-  <img class="w-[24px] sm:w-[20px] md:w-[30px] xl:w-auto" src="./assets/img/img-home/Vector (1).svg" alt="">
-</span> 
-       </div> 
+          <span
+            class="absolute w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px] rounded-[50%] bg-[#5B72EE] top-[-18%] left-1/2 -translate-x-1/2 flex justify-center items-center">
+            <img class="w-[24px] sm:w-[20px] md:w-[30px] xl:w-auto" src="./assets/img/img-home/Vector (1).svg" alt="">
+          </span>
+        </div>
 
         <div
           class="feature-card feature-card2 relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_rgba(38,45,118,0.08)] pt-14 pb-8 px-6 text-center">
-          <h3 class="font-semibold text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[#2F327D]">Easy Scheduling &amp; Attendance Tracking</h3>
+          <h3
+            class="font-semibold text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[#2F327D]">
+            Easy Scheduling &amp; Attendance Tracking</h3>
           <p class="mt-4 text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] xl:text-[20px] text-[#696984]">
             Schedule and reserve classrooms at one campus or multiple campuses.
             Keep detailed records of student attendance
           </p>
-          <span class="absolute  w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px] rounded-[50%] bg-[#00CBB8] top-[-18%] left-1/2 -translate-x-1/2 flex justify-center items-center">
-  <img class="w-[24px] sm:w-[20px] md:w-[30px] xl:w-auto" src="./assets/img/img-home/calendar 2.svg" alt="">
-</span> 
+          <span
+            class="absolute  w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px] rounded-[50%] bg-[#00CBB8] top-[-18%] left-1/2 -translate-x-1/2 flex justify-center items-center">
+            <img class="w-[24px] sm:w-[20px] md:w-[30px] xl:w-auto" src="./assets/img/img-home/calendar 2.svg" alt="">
+          </span>
 
         </div>
 
@@ -319,14 +336,17 @@
           class="feature-card flex flex-col items-center justify-center feature-card3 relative flex-1 bg-white rounded-2xl shadow-[0px_10px_60px_rgba(38,45,118,0.08)] pt-14 pb-8 px-6 text-center">
 
 
-          <h3 class="font-semibold text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[#2F327D]">Customer Tracking</h3>
-          <p class="mt-4 text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] xl:text-[20px]0 text-[#696984]">
+          <h3
+            class="font-semibold text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] text-[#2F327D]">
+            Customer Tracking</h3>
+          <p class="mt-4 text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] xl:text-[20px] text-[#696984]">
             Automate and track emails to individuals or groups. Skilline's
             built-in system helps organize your organization
           </p>
-          <span class="absolute  w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px] rounded-[50%] bg-[#29B9E7] top-[-18%] left-1/2 -translate-x-1/2 flex justify-center items-center">
-  <img class="w-[24px] sm:w-[20px] md:w-[30px] xl:w-auto" src="./assets/img/img-home/users 1.svg" alt="">
-</span> 
+          <span
+            class="absolute  w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px] rounded-[50%] bg-[#29B9E7] top-[-18%] left-1/2 -translate-x-1/2 flex justify-center items-center">
+            <img class="w-[24px] sm:w-[20px] md:w-[30px] xl:w-auto" src="./assets/img/img-home/users 1.svg" alt="">
+          </span>
 
         </div>
 
@@ -334,7 +354,7 @@
     </div>
   </section>
 
-<section class="what-is-totc mt-16 md:mt-24 xl:mt-32 2xl:mt-40 px-4">
+  <section class="what-is-totc mt-16 md:mt-24 xl:mt-32 2xl:mt-40 px-4">
     <div class="container mx-auto max-w-6xl">
 
       <div class="what-header text-center max-w-5xl mx-auto">
@@ -349,22 +369,27 @@
         </p>
       </div>
 
-      <div class="role-list flex flex-col md:flex-row gap-8 md:gap-12 xl:gap-20 2xl:gap-24 mt-10 md:mt-14 xl:mt-16 2xl:mt-20">
+      <div
+        class="role-list flex flex-col md:flex-row gap-8 md:gap-12 xl:gap-20 2xl:gap-24 mt-10 md:mt-14 xl:mt-16 2xl:mt-20">
 
         <div
-          class="role-card-left  relative flex-1 min-h-[360px] rounded-xl overflow-hidden bg-cover bg-center flex flex-col items-center justify-center gap-6 " style="background-image: url(
+          class="role-card-left  relative flex-1 min-h-[360px] rounded-xl overflow-hidden bg-cover bg-center flex flex-col items-center justify-center gap-6 "
+          style="background-image: url(
             './assets/img/img-home/Rectangle\ 19.svg'
           );">
           <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl 2xl:text-[32px] text-white">FOR INSTRUCTORS</h3>
-          <a href="#" class="role-btn rounded-full px-5 md:px-7 xl:px-8 2xl:px-10 py-3 md:py-4 xl:py-5 2xl:py-6 border border-white text-base md:text-lg xl:text-xl 2xl:text-[22px] text-white">
+          <a href="#"
+            class="role-btn rounded-full px-5 md:px-7 xl:px-8 2xl:px-10 py-3 md:py-4 xl:py-5 2xl:py-6 border border-white text-base md:text-lg xl:text-xl 2xl:text-[22px] text-white">
             Start a class today
           </a>
         </div>
 
         <div
-          class="role-card-right relative flex-1 min-h-[360px] rounded-xl overflow-hidden bg-cover bg-center flex flex-col items-center justify-center gap-6" style="background-image: url('./assets/img/img-home/Rectangle\ 21.svg');">
+          class="role-card-right relative flex-1 min-h-[360px] rounded-xl overflow-hidden bg-cover bg-center flex flex-col items-center justify-center gap-6"
+          style="background-image: url('./assets/img/img-home/Rectangle\ 21.svg');">
           <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl 2xl:text-[32px] text-white">FOR STUDENTS</h3>
-          <a href="#" class="role-btn rounded-full px-5 md:px-7 xl:px-8 2xl:px-10 py-3 md:py-4 xl:py-5 2xl:py-6 bg-[#23BDEE] opacity-90 text-base md:text-lg xl:text-xl 2xl:text-[22px] text-white">
+          <a href="#"
+            class="role-btn rounded-full px-5 md:px-7 xl:px-8 2xl:px-10 py-3 md:py-4 xl:py-5 2xl:py-6 bg-[#23BDEE] opacity-90 text-base md:text-lg xl:text-xl 2xl:text-[22px] text-white">
             Enter access code
           </a>
         </div>
@@ -375,11 +400,12 @@
 
 
 
-  <section class="you-can-do mt-20 md:mt-28 xl:mt-36 2xl:mt-40 p-5 md:h-auto xl:h-[512px] w-[90%] md:w-[85%] xl:w-[80%] mx-auto">
-  <div class="container container-you w-full flex flex-col md:flex-row items-center gap-6 md:gap-8 xl:gap-10">
+  <section
+    class="you-can-do mt-20 md:mt-28 xl:mt-36 2xl:mt-40 p-5 md:h-auto xl:h-[512px] w-[90%] md:w-[85%] xl:w-[80%] mx-auto">
+    <div class="container container-you w-full flex flex-col md:flex-row items-center gap-6 md:gap-8 xl:gap-10">
 
-    <div class="you-can-do-text flex-1 relative">
-  <div class="absolute -top-0 -left-3 md:-top-3 md:-left-4 xl:-top-4 xl:-left-5 2xl:-top-4 2xl:-left-6
+      <div class="you-can-do-text flex-1 relative">
+        <div class="absolute -top-0 -left-3 md:-top-3 md:-left-4 xl:-top-4 xl:-left-5 2xl:-top-4 2xl:-left-6
               w-6 h-6 md:w-7 md:h-7 xl:w-8 xl:h-8 2xl:w-[60px] 2xl:h-[60px]
               bg-[#33EFA0] rounded-full -z-10"></div>
 
@@ -389,24 +415,15 @@
 
 
 
-<dialog id="video_modal" class="modal">
-  <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden">
-    <div class="aspect-video">
-      <iframe class="w-full h-full"
-        src="https://www.aparat.com/video/video/embed/videohash/shcxyhl/vt/frame"
-        allowfullscreen></iframe>
-    </div>
-  </div>
-  <form method="dialog" class="modal-backdrop"><button>close</button></form>
-</dialog>
-
-
-
-
-
-
-
-              
+        <dialog id="video_modal" class="modal">
+          <div class="modal-box w-11/12 max-w-4xl p-0 overflow-hidden">
+            <div class="aspect-video">
+              <iframe class="w-full h-full" src="https://www.aparat.com/video/video/embed/videohash/shcxyhl/vt/frame"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop"><button>close</button></form>
+        </dialog>
 
 
 
@@ -415,127 +432,265 @@
 
 
 
-      <h2 class="you-can-do-title font-semibold text-xl md:text-2xl xl:text-3xl 2xl:text-[36px] text-[#2F327D]">
-        Everything you can do in a physical classroom,
-        <span class="text-[#49bbbd]">you can do with TOTC</span>
-      </h2>
 
-      <p class="you-can-do-desc mt-4 md:mt-5 2xl:mt-6 text-[#696984]">
-        TOTC’s school management software helps traditional and online schools
-        manage scheduling, attendance, payments and virtual classrooms all in
-        one secure cloud-based system.
-      </p>
 
-      <a href="./learn-more.html" class="you-can-do-link inline-block mt-4 md:mt-5 2xl:mt-6 text-[#696984]">
-        Learn more
-      </a>
-       <div class="absolute top-1/2 -right-3 md:-right-4 xl:-right-11 2xl:-right-6
+
+
+
+
+
+
+        <h2 class="you-can-do-title font-semibold text-xl md:text-2xl xl:text-3xl 2xl:text-[36px] text-[#2F327D]">
+          Everything you can do in a physical classroom,
+          <span class="text-[#49bbbd]">you can do with TOTC</span>
+        </h2>
+
+        <p class="you-can-do-desc mt-4 md:mt-5 2xl:mt-6 text-[#696984]">
+          TOTC’s school management software helps traditional and online schools
+          manage scheduling, attendance, payments and virtual classrooms all in
+          one secure cloud-based system.
+        </p>
+
+        <a href="./learn-more.html" class="you-can-do-link inline-block mt-4 md:mt-5 2xl:mt-6 text-[#696984]">
+          Learn more
+        </a>
+        <div class="absolute top-1/2 -right-3 md:-right-4 xl:-right-11 2xl:-right-6
               w-2 h-2 md:w-2.5 md:h-2.5 xl:w-3 xl:h-3 2xl:w-[20px] 2xl:h-[20px]
               bg-[#33EFA0] rounded-full"></div>
-    </div>
+      </div>
 
-    <div class="you-can-do-media flex-1 img-class relative">
-<!-- <div class="absolute rounded-[20px]  top-0 left-[-10%]"></div> -->
-  <div class="absolute -top-3 -left-3 md:-top-4 md:-left-4 xl:-top-5 xl:-left-5 2xl:-top-6 2xl:-left-6
+      <div class="you-can-do-media flex-1 img-class relative">
+        <!-- <div class="absolute rounded-[20px]  top-0 left-[-10%]"></div> -->
+        <div class="absolute -top-3 -left-3 md:-top-4 md:-left-4 xl:-top-5 xl:-left-5 2xl:-top-6 2xl:-left-6
               w-16 h-16 md:w-20 md:h-20 xl:w-28 xl:h-28 2xl:w-[138px] 2xl:h-[138px]
              bg-[#23BDEE] rounded-[20px] -z-10"></div>
 
-     
-             <img src="./assets/img/img-home/class.svg" alt="Classroom" class="w-full rounded-xl 2xl:rounded-[20px] img-class">
- <button onclick="video_modal.showModal()"
-    class="absolute inset-0 m-auto w-16 h-16 md:w-20 md:h-20 xl:w-28 xl:h-28 2xl:w-[90px] 2xl:h-[90px] rounded-full bg-white/90 flex items-center justify-center"
-    aria-label="Play video">
-            <img class="w-[30%]" src="./assets/img/img-home/3blue.svg" alt="">
-  </button>
+
+        <img src="./assets/img/img-home/class.svg" alt="Classroom"
+          class="w-full rounded-xl 2xl:rounded-[20px] img-class">
+        <button onclick="video_modal.showModal()"
+          class="absolute inset-0 m-auto w-16 h-16 md:w-20 md:h-20 xl:w-28 xl:h-28 2xl:w-[90px] 2xl:h-[90px] rounded-full bg-white/90 flex items-center justify-center"
+          aria-label="Play video">
+          <img class="w-[30%]" src="./assets/img/img-home/3blue.svg" alt="">
+        </button>
 
 
 
 
-              <div class="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 xl:-bottom-5 xl:-right-5 2xl:-bottom-6 2xl:-right-6
+        <div class="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 xl:-bottom-5 xl:-right-5 2xl:-bottom-6 2xl:-right-6
               w-28 h-28 md:w-36 md:h-36 xl:w-48 xl:h-48 2xl:w-[231px] 2xl:h-[231px]
               bg-[#33EFA0] rounded-[20px] -z-10"></div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="our-features flex flex-col gap-3 md:gap-4 2xl:gap-5 mt-20 md:mt-28 xl:mt-36 2xl:mt-40 items-center px-4 text-center">
-  <h1 class="text-2xl md:text-3xl xl:text-[32px] 2xl:text-[36px] text-[#2F327D] font-bold">
-    Our
-    <span class="text-[#49bbbd]">
-      Features
-    </span>
-  </h1>
-  <p class="text-base md:text-lg xl:text-xl 2xl:text-2xl text-p">
-    This very extraordinary feature, can make learning activities more efficient
-  </p>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="ui-classroom py-10 md:py-12 xl:py-16 mt-12 md:mt-16 xl:mt-20 2xl:mt-24 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
-  <div class="container-ui w-full px-3 flex flex-col  lg:flex-row justify-between items-center gap-8 md:gap-8 xl:gap-11">
-
-    <div class="ui-media relative w-full md:w-[100%]   aspect-[430/305]">
-
-      <div class="absolute left-[2%] top-[11%] w-[84%] h-[72%] bg-gray-100 rounded-xl 2xl:rounded-[20px] ui-media-details"></div>
-
-      <img src="./assets/img/img-home/eveny.svg" alt="Instructor" class="absolute left-[11%] top-[25%] w-[27%]">
-
-      <div class="absolute left-[7%] top-[68%] flex flex-row gap-2 md:gap-3 xl:gap-4">
-        <button class="rounded-full px-3 md:px-4 xl:px-6 bg-[#3465E1] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Present</button>
-        <button class="rounded-full flex flex-row-reverse items-center justify-center gap-1.5 px-3 md:px-4 xl:px-6 bg-[#E13468] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Call
-          <img src="./assets/img/img-home/phone 1.svg" alt="">
-        </button>
       </div>
 
-      <img src="./assets/img/img-home/tamara.svg" alt="Tamara" class="absolute left-[51%] top-[25%] w-[18%]">
-      <img src="./assets/img/img-home/humbert.svg" alt="Humbert" class="absolute left-[51%] top-[53%] w-[18%]">
-
-      <img src="./assets/img/img-home/adam.svg" alt="Adam" class="absolute left-[77%] top-[19%] w-[22%]">
-      <img src="./assets/img/img-home/patrica.svg" alt="Patricia" class="absolute left-[72%] top-[60%] w-[26%]">
-      <img src="./assets/img/img-home/circle22.svg" class="absolute top-[40%] right-[40%]" alt="">
     </div>
+  </section>
 
-    <div class="ui-text w-full  md:w-[100%]">
-      <h2 class="ui-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
-        A <span class="text-[#49bbbd]">user interface</span> designed for the classroom
-      </h2>
 
-      <ul class="ui-list flex flex-col gap-5 md:gap-7 xl:gap-9 2xl:gap-10 mt-6 md:mt-8 xl:mt-10 2xl:mt-12">
-        <li class="ui-item flex items-center gap-4">
-          <span class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
-            <img src="./assets/img/img-home/Group 72.svg" alt="">
-          </span>
-          <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">Teachers don’t get lost in the grid view and have a dedicated Podium space.</p>
-        </li>
+  <section
+    class="our-features flex flex-col gap-3 md:gap-4 2xl:gap-5 mt-20 md:mt-28 xl:mt-36 2xl:mt-40 items-center px-4 text-center">
+    <h1 class="text-2xl md:text-3xl xl:text-[32px] 2xl:text-[36px] text-[#2F327D] font-bold">
+      Our
+      <span class="text-[#49bbbd]">
+        Features
+      </span>
+    </h1>
+    <p class="text-base md:text-lg xl:text-xl 2xl:text-2xl text-p">
+      This very extraordinary feature, can make learning activities more efficient
+    </p>
+  </section>
 
-        <li class="ui-item flex items-center gap-4">
-          <span class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
-            <img src="./assets/img/img-home/Group 73.svg" alt="">
-          </span>
-          <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">TA’s and presenters can be moved to the front of the class.</p>
-        </li>
 
-        <li class="ui-item flex items-center gap-4">
-          <span class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
-            <img src="./assets/img/img-home/users 2.svg" alt="">
-          </span>
-          <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">Teachers can easily see all students and class data at one time.</p>
-        </li>
-      </ul>
+
+
+
+
+
+
+
+
+  <section
+    class="ui-classroom py-10 md:py-12 xl:py-16 mt-12 md:mt-16 xl:mt-20 2xl:mt-24 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
+    <div
+      class="container-ui w-full px-3 flex flex-col  lg:flex-row justify-between items-center gap-8 md:gap-8 xl:gap-11">
+
+      <div class="ui-media relative w-full md:w-[100%]   aspect-[430/305]">
+
+        <div
+          class="absolute left-[2%] top-[11%] w-[84%] h-[72%] bg-gray-100 rounded-xl 2xl:rounded-[20px] ui-media-details">
+        </div>
+
+        <img src="./assets/img/img-home/eveny.svg" alt="Instructor" class="absolute left-[11%] top-[25%] w-[27%]">
+
+        <div class="absolute left-[7%] top-[68%] flex flex-row gap-2 md:gap-3 xl:gap-4">
+          <button
+            class="rounded-full px-3 md:px-4 xl:px-6 bg-[#3465E1] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Present</button>
+          <button
+            class="rounded-full flex flex-row-reverse items-center justify-center gap-1.5 px-3 md:px-4 xl:px-6 bg-[#E13468] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Call
+            <img src="./assets/img/img-home/phone 1.svg" alt="">
+          </button>
+        </div>
+
+        <img src="./assets/img/img-home/tamara.svg" alt="Tamara" class="absolute left-[51%] top-[25%] w-[18%]">
+        <img src="./assets/img/img-home/humbert.svg" alt="Humbert" class="absolute left-[51%] top-[53%] w-[18%]">
+
+        <img src="./assets/img/img-home/adam.svg" alt="Adam" class="absolute left-[77%] top-[19%] w-[22%]">
+        <img src="./assets/img/img-home/patrica.svg" alt="Patricia" class="absolute left-[72%] top-[60%] w-[26%]">
+        <img src="./assets/img/img-home/circle22.svg"
+          class="absolute  sm:top-[50%] right-[42%] 2xl:top-[47%] right-[42%] w-[93px]" alt="">
+      </div>
+
+      <div class="ui-text w-full  md:w-[100%]">
+        <h2 class="ui-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
+          A <span class="text-[#49bbbd]">user interface</span> designed for the classroom
+        </h2>
+
+        <ul class="ui-list flex flex-col gap-5 md:gap-7 xl:gap-9 2xl:gap-10 mt-6 md:mt-8 xl:mt-10 2xl:mt-12">
+          <li class="ui-item flex items-center gap-4">
+            <span
+              class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+              <img src="./assets/img/img-home/Group 72.svg" alt="">
+            </span>
+            <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">Teachers don’t get lost in the
+              grid view and have a dedicated Podium space.</p>
+          </li>
+
+          <li class="ui-item flex items-center gap-4">
+            <span
+              class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+              <img src="./assets/img/img-home/Group 73.svg" alt="">
+            </span>
+            <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">TA’s and presenters can be moved
+              to the front of the class.</p>
+          </li>
+
+          <li class="ui-item flex items-center gap-4">
+            <span
+              class="ui-icon shrink-0 w-12 h-12 md:w-14 md:h-14 2xl:w-[60px] 2xl:h-[60px] rounded-full bg-white shadow-md flex items-center justify-center">
+              <img src="./assets/img/img-home/users 2.svg" alt="">
+            </span>
+            <p class="text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">Teachers can easily see all
+              students and class data at one time.</p>
+          </li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
+  <section class="tools-section py-10 md:py-12 xl:py-16 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
+    <div class="container-tools w-full px-3 flex flex-col md:flex-row items-center justify-between gap-8 xl:gap-11">
+
+      <div class="tools-text w-full md:w-[40%]">
+        <h2 class="tools-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
+          <span class="text-[#49bbbd]">Tools</span> For Teachers And Learners
+        </h2>
+        <p class="tools-desc mt-4 md:mt-5 2xl:mt-6 text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">
+          Class has a dynamic set of teaching tools built to be deployed and used
+          during class. Teachers can handout assignments in real-time for students
+          to complete and submit.
+        </p>
+      </div>
+
+      <div class="tools-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/girlbuti.svg" alt="Student with books" class="w-full rounded-[30px] shadow-[0px_10px_60px_#ff1493]">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="assessments-section py-10 md:py-12 xl:py-16 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
+    <div class="container w-full px-3 flex flex-col md:flex-row items-center justify-between gap-8 xl:gap-11">
+
+      <div class="assessments-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/media.svg" alt="Quiz question preview" class="w-full  shadow-[0px_10px_60px_#ff1493] rounded-[30px]">
+      </div>
+
+      <div class="assessments-text w-full md:w-[40%]">
+        <h2 class="assessments-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
+          Assessments, <span class="text-[#49bbbd]">Quizzes</span>, Tests
+        </h2>
+        <p
+          class="assessments-desc mt-4 md:mt-5 2xl:mt-6 text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">
+          Easily launch live assignments, quizzes, and tests. Student results are
+          automatically entered in the online gradebook.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="class-management py-10 md:py-12 xl:py-16 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
+    <div class="container-man w-full px-3 flex flex-col md:flex-row items-center justify-between gap-8 xl:gap-11">
+
+      <div class="class-management-text w-full md:w-[40%]">
+        <h2
+          class="class-management-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
+          <span class="text-[#49bbbd]">Class Management</span> Tools for Educators
+        </h2>
+        <p
+          class="class-management-desc mt-4 md:mt-5 2xl:mt-6 text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">
+          Class provides tools to help run and manage the class such as Class
+          Roster, Attendance, and more. With the Gradebook, teachers can review
+          and grade tests and quizzes in real-time.
+        </p>
+      </div>
+
+      <div class="class-management-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/gradybook.svg" alt="Gradebook preview" class="w-full ">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="one-on-one py-10 md:py-12 xl:py-16 w-[90%] md:w-[85%] xl:w-[83%] mx-auto">
+    <div class="container w-full px-3 flex flex-col md:flex-row items-center justify-between gap-8 xl:gap-11">
+
+      <div class="one-on-one-media w-full md:w-[50%]">
+        <img src="./assets/img/img-home/One-on-One Discussions.svg" alt="Private discussion preview" class="w-full">
+      </div>
+
+      <div class="one-on-one-text w-full md:w-[40%]">
+        <h2 class="one-on-one-title font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] text-[#2F327D]">
+          One-on-One <span class="text-[#49bbbd] block">Discussions</span>
+        </h2>
+        <p class="one-on-one-desc mt-4 md:mt-5 2xl:mt-6 text-base md:text-lg xl:text-xl 2xl:text-[22px] text-[#696984]">
+          Teachers and teacher assistants can talk with students privately
+          without leaving the Zoom environment.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="text-center mb-8 md:mb-10 xl:mb-12 2xl:mb-14">
+    <a class="inline-block text-base md:text-lg xl:text-xl 2xl:text-2xl py-3 md:py-4 2xl:py-5 px-5 md:px-6 xl:px-7 2xl:px-8 mx-auto text-[#49bbbd] rounded-[80px] border border-[#49bbbd]"
+      href="#">See more features</a>
   </div>
-</section>
+
+  <section
+    class="explore relative ps-4 md:ps-12 xl:ps-24 2xl:ps-[155px] pt-20 md:pt-28 xl:pt-40 2xl:pt-[247px] pe-4 md:pe-8 xl:pe-14 2xl:pe-20">
+<div class="absolute w-[80%] h-[204%] bg-[#9DCCFF] opacity-20 left-0 top-0"></div>
+    <div class="title-explore mb-10 md:mb-14 xl:mb-20 2xl:mb-24">
+      <h4 class="text-2xl md:text-3xl xl:text-4xl 2xl:text-[40px] font-bold">Explore Course</h4>
+      <p class="text-base md:text-lg xl:text-xl 2xl:text-2xl font-medium opacity-50">Ut sed eros finibus, placerat orci
+        id, dapibus.</p>
+    </div>
+
+
+<div class="see flex flex-row justify-between items-center">
+  <span class="flex flex-row items-center gap-1 md:gap-2">
+    <img class="w-5 h-5 md:w-6 md:h-6 xl:w-7 xl:h-7 2xl:w-[30px] 2xl:h-[30px]" src="./assets/img/img-home/android-color-palette.svg" alt="">
+    <span class="text-lg md:text-xl xl:text-2xl 2xl:text-[28px] font-bold">lorem</span>
+  </span>
+
+  <span class="flex flex-row items-center gap-4 md:gap-8 xl:gap-10 2xl:gap-12">
+    <a class="text-sm md:text-base xl:text-xl 2xl:text-2xl text-[#00BCD4] w-auto" href="">SEE ALL</a>
+    <img class="w-4 md:w-5 2xl:w-[23px]" src="./assets/img/img-home/flash.svg" alt="">
+  </span>
+</div>
+
+<div class="category-main overflow-x-auto  relative labrary1 flex flex-row mt-6 md:mt-8 xl:mt-9 2xl:mt-10 flex flex-row items-start">
 
 
 
@@ -548,6 +703,46 @@
 
 
 
+<div class=" absolute rounded-[30px] bg-[#979797] h-[82px] w-[90%] bottom-[-15px] -z-1 opacity-50"></div>
+
+       <div class="flex flex-col lg:flex-row">
+  <img class="book w-32 md:w-36 xl:w-40" data-index="0" src="./assets/img/img-home/Book.svg" alt="">
+  <div class="open-box first"></div>
+</div>
+
+<div class="flex flex-col lg:flex-row">
+  <img class="book w-32 md:w-36 xl:w-40" data-index="1" src="./assets/img/img-home/Book (1).svg" alt="">
+  <div class="open-box first"></div>
+</div>
+
+<div class="flex flex-col lg:flex-row">
+  <img class="book w-32 md:w-36 xl:w-40" data-index="2" src="./assets/img/img-home/Book3.svg" alt="">
+  <div class="open-box first"></div>
+</div>
+
+<div class="flex flex-col lg:flex-row">
+  <img class="book w-32 md:w-36 xl:w-40" data-index="3" src="./assets/img/img-home/Book4.svg" alt="">
+  <div class="open-box first"></div>
+</div>
+
+<div class="flex flex-col lg:flex-row">
+  <img class="book w-32 md:w-36 xl:w-40" data-index="4" src="./assets/img/img-home/Book5.svg" alt="">
+  <div class="open-box first"></div>
+</div>
+
+<div class="flex flex-col lg:flex-row">
+  <img class="book w-32 md:w-36 xl:w-40" data-index="5" src="./assets/img/img-home/Book 6.svg" alt="">
+  <div class="open-box first"></div>
+</div>
+<!-- <div class="open-box"></div> -->
+        </div>
+
+
+
+
+</div>
+
+  </section>
 
 
   <script src="./assets/js/main.js"></script>

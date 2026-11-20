@@ -1,0 +1,61 @@
+{
+    "products":[
+{
+  "tabTitle": "Photoshop",
+    "titleDetails": "Adobe Photoshop for Beginners",
+    "textDetails": "Learn photo editing, retouching and layer-based design from scratch with hands-on projects.",
+    "price": "$120",
+    "img": "./assets/img/img-home/Rectangle 34.svg"
+
+},
+{
+ "tabTitle": "Illustrator",
+    "titleDetails": "Vector Illustration with Illustrator",
+    "textDetails": "Create logos, icons and scalable artwork using the pen tool, shapes and color palettes.",
+    "price": "$140",
+    "img": "./assets/img/img-home/doreh2.svg"
+
+
+},
+ {
+    "tabTitle": "UI Design",
+    "titleDetails": "UI Design Fundamentals",
+    "textDetails": "Understand layout, typography and color systems to design clean and modern interfaces.",
+    "price": "$200",
+    "img": "./assets/img/img-home/dovreh3.svg"
+  },
+
+  {
+    "tabTitle": "Figma",
+    "titleDetails": "Figma from Zero to Pro",
+    "textDetails": "Build responsive designs, components and prototypes in Figma step by step.",
+    "price": "$180",
+    "img": "./assets/img/img-home/dovreh4.svg"
+  },
+  {
+    "tabTitle": "Typography",
+    "titleDetails": "The Art of Typography",
+    "textDetails": "Learn how to choose, pair and arrange fonts to make your designs readable and beautiful.",
+    "price": "$90",
+    "img": "./assets/img/img-home/doreh2.svg"
+  },
+  {
+    "tabTitle": "Branding",
+    "titleDetails": "Brand Identity Design",
+    "textDetails": "Design a complete brand identity including logo, colors, typography and style guide.",
+    "price": "$250",
+    "img": "./assets/img/img-home/dovreh3.svg"
+  },
+  {
+    "tabTitle": "Motion",
+    "titleDetails": "Intro to Motion Graphics",
+    "textDetails": "Bring your designs to life with basic animation principles and After Effects workflows.",
+    "price": "$300",
+    "img": "./assets/img/img-home/dovreh4.svg"
+  }
+
+    ]
+}
+
+
+

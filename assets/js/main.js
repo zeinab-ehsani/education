@@ -1,35 +1,58 @@
-// let light=document.querySelector("#light")
-// let dark=document.querySelector("#dark")
-// let cupcake=document.querySelector("#cupcake")
+let pairs = [
+      ["bg-white", "bg-[#0A0A0A]"],
 
-// dark.addEventListener("click",function(){
+    // ["bg-white", "bg-[#161A20]"],
+    ["bg-bg-blue", "bg-[#1B2A41]"],
+    ["text-dark2", "text-[#f5f5f5]"],
+        ["text-dark", "text-[#ff1493]"],
+
+    // ["text-dark", "text-[#f5f5f5]"],
+    ["text-[#010514]", "text-[#f5f5f5]"],
+    ["text-[#010514CC]", "text-[#f5f5f5CC]"],
+
+        //  ["text-white", "text-[#ff1493]"],
+
+     ["text-white", "text-[#161A20]"],
+]
+
+let groups = pairs.map(function (pair) {
+    return document.querySelectorAll("." + CSS.escape(pair[0]))
+})
+
+dark.addEventListener("click", function () {
+    pairs.forEach(function (pair, i) {
+        groups[i].forEach(el => el.classList.replace(pair[0], pair[1]))
+    })
+})
+
+light.addEventListener("click", function () {
+    pairs.forEach(function (pair, i) {
+        groups[i].forEach(el => el.classList.replace(pair[1], pair[0]))
+    })
+})
 
 
-// })
-// let body = document.querySelector("body")
-
-// dark.addEventListener("click", function () {
-//     body.classList.remove("text-white")
-//     body.classList.add("text-black")
-// })
-// let items = document.querySelectorAll(".bg-white,.text-white")
+// let bgItems = document.querySelectorAll(".bg-white")
+// let textItems = document.querySelectorAll(".text-white")
 
 // function setTheme(bg, text) {
-//     items.forEach(function (item) {
-//         item.classList.remove(
-//             "bg-white", "bg-[#2b2b2b]", "bg-[#faf7f5]",
-//             "text-black", "text-white",
-//         )
-//         item.classList.add(bg, text)
+//     bgItems.forEach(function (item) {
+//         item.classList.remove("bg-white", "bg-[#2b2b2b]", "bg-[#faf7f5]")
+//         item.classList.add(bg)
+//     })
+
+//     textItems.forEach(function (item) {
+//         item.classList.remove("text-white", "text-black")
+//         item.classList.add(text)
 //     })
 // }
 
 // light.addEventListener("click", function () {
-//     setTheme("bg-white", "text-black")
+//     setTheme("bg-white", "text-white")
 // })
 
 // dark.addEventListener("click", function () {
-//     setTheme("bg-[#2b2b2b]", "text-white")
+//     setTheme("bg-[#2b2b2b]", "text-dark")
 // })
 
 // cupcake.addEventListener("click", function () {
@@ -39,54 +62,218 @@
 
 
 
+// const modal = document.getElementById('video_modal');
+// const frame = modal.querySelector('iframe');
+// const src = frame.src;
+
+// modal.addEventListener('close', () => {
+//     frame.src = '';
+//     frame.src = src;
+// });
+
+
+// const localModal = document.getElementById('local_modal');
+// const localVideo = document.getElementById('local_video');
+
+// localModal.addEventListener('close', () => {
+//     localVideo.pause();
+//     localVideo.currentTime = 0;
+// });
+
+
+// let showeDeta = () => {
+//     let xml = new XMLHttpRequest()
+//     xml.open("get", "http://localhost:3000/products")
+//     xml.responseType = "json"
+//     xml.onload = ()=> {
+
+//  products = xml.response;
+// // xml.response.forEach((elem)=>{
+// // document.querySelector("div.open-box").innerHTML+=`
+// // <div class="details-book1 border-[3px] border-[#599BA9] shrink-0 w-[300px] md:w-[460px] xl:w-[560px] 2xl:w-[684px] p-3 md:p-4 2xl:p-5 bg-white gap-4 md:gap-6 xl:gap-8 2xl:gap-10">
+// //   <img class="w-full lg:w-[40%]" src="${elem.img}" alt="${elem.titleDetails}">
+// //   <div class="w-full lg:w-[50%] flex flex-col gap-1.5 justify-between">
+// //     <h1 class="text-lg md:text-xl xl:text-3xl 2xl:text-[36px] font-bold title-details">${elem.titleDetails}</h1>
+// //     <p class="text-details text-sm md:text-base xl:text-xl 2xl:text-[22px] text-[#696984]">${elem.textDetails}</p>
+// //     <span class="flex flex-row justify-between items-center">
+// //       <span class="text-[#FFC107] text-sm md:text-base xl:text-lg">
+// //         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+// //       </span>
+// //       <span class="text-base md:text-lg xl:text-xl 2xl:text-[20px] font-bold price">${elem.price}</span>
+// //     </span>
+// //     <a href="./course-detail.html" class="text-[#00BCD4] course-open-btn block text-center font-semibold no-underline rounded-xl border border-[#00BCD4] py-2 md:py-3 text-sm md:text-base xl:text-lg hover:opacity-90">EXPLORE</a>
+// //   </div>
+// // </div>
+
+
+
+// // })
+//     }
+//     xml.onerror=()=>{
+//         console.log("error")
+//     }
+//     xml.send(null)
+// }
+
+// showeDeta()
+
+
+
+// const books = document.querySelectorAll(".book");
+
+// books.forEach((book) => {
+//   book.addEventListener("click", () => {
+//     const elem =products[book.dataset.index];
+//     const box = book.nextElementSibling;
+
+//     document.querySelectorAll(".open-box").forEach((o) => (o.innerHTML = ""));
+
+//     box.innerHTML = `
+//       <div class="details-book1 border-[3px] border-border shrink-0 w-[684px] p-sp-20 bg-white gap-sp-40">
+//         <img class="w-[40%]" src="${elem.img}" alt="${elem.titleDetails}">
+//         <div class="w-[50%] flex flex-col gap-1.5 justify-between">
+//           <h1 class="text-font-36 font-bold title-details">${elem.titleDetails}</h1>
+//           <p class="text-details text-font-22 text-p">${elem.textDetails}</p>
+//           <span class="flex flex-row justify-between items-center">
+//             <span class="text-[#FFC107]">
+//               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+//             </span>
+//             <span class="text-font-20 font-bold price">${elem.price}</span>
+//           </span>
+//           <a href="./course-detail.html" class="text-cyan course-open-btn block text-center font-semibold no-underline rounded-xl border border-[var(--color-cyan)] py-3 hover:opacity-90">EXPLORE</a>
+//         </div>
+//       </div>
+//     `;
+//   });
+// });
 
 
 
 
-let bgItems = document.querySelectorAll(".bg-white")
-let textItems = document.querySelectorAll(".text-white")
 
-function setTheme(bg, text) {
-    bgItems.forEach(function (item) {
-        item.classList.remove("bg-white", "bg-[#2b2b2b]", "bg-[#faf7f5]")
-        item.classList.add(bg)
-    })
+// let products = [];
 
-    textItems.forEach(function (item) {
-        item.classList.remove("text-white", "text-black")
-        item.classList.add(text)
-    })
+// let showeDeta = () => {
+//   let xml = new XMLHttpRequest();
+//   xml.open("get", "http://localhost:3000/products");
+//   xml.responseType = "json";
+//   xml.onload = () => {
+//     products = xml.response;
+//   };
+//   xml.onerror = () => {
+//     console.log("error");
+//   };
+//   xml.send(null);
+// };
+
+// showeDeta(); 
+
+// const books = document.querySelectorAll(".book");
+
+// books.forEach((book) => {
+//   book.addEventListener("click", () => {
+
+//  console.log("clicked", book.dataset.index, products);
+//   const eleme = products[book.dataset.index];
+//   if (!elem) return;
+
+
+//     const elem = products[book.dataset.index];
+//     if (!elem) return; 
+
+//     const box = book.nextElementSibling;
+
+//     document.querySelectorAll(".open-box").forEach((o) => (o.innerHTML = ""));
+
+//     box.innerHTML = `
+//       <div class="details-book1 flex flex-col lg:flex-row border-[3px] border-[#599BA9] shrink-0 w-[300px] md:w-[460px] xl:w-[560px] 2xl:w-[684px] p-3 md:p-4 2xl:p-5 bg-white gap-4 md:gap-6 xl:gap-8 2xl:gap-10">
+//         <img class="w-full lg:w-[40%]" src="${elem.img}" alt="${elem.titleDetails}">
+//         <div class="w-full lg:w-[50%] flex flex-col gap-1.5 justify-between">
+//           <h1 class="text-lg md:text-xl xl:text-3xl 2xl:text-[36px] font-bold title-details">${elem.titleDetails}</h1>
+//           <p class="text-details text-sm md:text-base xl:text-xl 2xl:text-[22px] text-[#696984]">${elem.textDetails}</p>
+//           <span class="flex flex-row justify-between items-center">
+//             <span class="text-[#FFC107] text-sm md:text-base xl:text-lg">
+//               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+//             </span>
+//             <span class="text-base md:text-lg xl:text-xl 2xl:text-[20px] font-bold price">${elem.price}</span>
+//           </span>
+//           <a href="./course-detail.html" class="text-[#00BCD4] course-open-btn block text-center font-semibold no-underline rounded-xl border border-[#00BCD4] py-2 md:py-3 text-sm md:text-base xl:text-lg hover:opacity-90">EXPLORE</a>
+//         </div>
+//       </div>
+//     `;
+//   });
+// });
+
+
+
+
+
+
+
+
+
+const bookImages = document.querySelectorAll(".labrary1 .book");
+const openBoxes = document.querySelectorAll(".labrary1 .open-box");
+
+let booksData = [];
+
+async function loadBooks() {
+  try {
+    const res = await fetch("http://localhost:3000/products");
+    booksData = await res.json();
+  } catch (err) {
+    console.error("Error loading books:", err);
+  }
+}
+loadBooks();
+
+function createCard(book) {
+  return `
+     <div class="details-book1 flex flex-col lg:flex-row border-[3px] border-[#599BA9] shrink-0 w-[300px] md:w-[460px] xl:w-[560px] 2xl:w-[684px] p-3 md:p-4 2xl:p-5 bg-white gap-4 md:gap-6 xl:gap-8 2xl:gap-10 rounded-[30px]">
+         <img class="w-full lg:w-[40%] " src="${book.img}" alt="${book.titleDetails}">
+         <div class="w-full lg:w-[50%] flex flex-col gap-1.5 justify-between">
+           <h1 class="text-lg md:text-xl xl:text-3xl 2xl:text-[36px] font-bold title-details">${book.titleDetails}</h1>
+          <p class="text-details text-sm md:text-base xl:text-xl 2xl:text-[22px] text-[#696984]">${book.textDetails}</p>
+           <span class="flex flex-row justify-between items-center">
+            <span class="text-[#FFC107] text-sm md:text-base xl:text-lg">
+               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>            </span>
+            <span class="text-base md:text-lg xl:text-xl 2xl:text-[20px] font-bold price">${book.price}</span>
+          </span>
+           <a href="./course-detail.html" class="text-[#00BCD4] course-open-btn block text-center font-semibold no-underline rounded-xl border border-[#00BCD4] py-2 md:py-3 text-sm md:text-base xl:text-lg hover:opacity-90">EXPLORE</a>
+         </div>
+      </div>
+  `;
 }
 
-light.addEventListener("click", function () {
-    setTheme("bg-white", "text-white")
-})
+bookImages.forEach((img) => {
+  img.addEventListener("click", () => {
+    const index = Number(img.dataset.index);
+    const box = img.parentElement.querySelector(".open-box");
+    const book = booksData[index];
 
-dark.addEventListener("click", function () {
-    setTheme("bg-[#2b2b2b]", "text-dark")
-})
+    if (!book) return;
 
-cupcake.addEventListener("click", function () {
-    setTheme("bg-[#faf7f5]", "text-black")
-})
+    const isOpen = box.innerHTML.trim() !== "";
 
+    openBoxes.forEach((b) => (b.innerHTML = ""));
 
+    if (!isOpen) {
+      box.innerHTML = createCard(book);
 
+ 
+      let  titleDetails=document.querySelectorAll(".title-details")
 
-const modal = document.getElementById('video_modal');
-const frame = modal.querySelector('iframe');
-const src = frame.src;
+      titleDetails.forEach((elem)=>{
+        let text=elem.textContent.trim();
+        elem.textContent=text.slice(0,15)+".."
+      })
 
-modal.addEventListener('close', () => {
-  frame.src = '';
-  frame.src = src;
-});
+      let textDetails=document.querySelectorAll(".text-details")
+      textDetails.forEach((elem2)=>{
 
-
-const localModal = document.getElementById('local_modal');
-const localVideo = document.getElementById('local_video');
-
-localModal.addEventListener('close', () => {
-  localVideo.pause();
-  localVideo.currentTime = 0;
+        let text2=elem2.textContent.trim();
+        elem2.textContent=text2.slice(0,40)+"..."
+      })
+    }
+  });
 });
