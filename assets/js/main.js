@@ -286,3 +286,115 @@ bookImages.forEach((img) => {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const bookImages2 = document.querySelectorAll(".labrary2 .photo");
+const openBoxes2 = document.querySelectorAll(".labrary2 .open-photo");
+
+let booksData2 = [];
+
+async function loadBooks2() {
+  try {
+    const res = await fetch("http://localhost:3000/cardBook2");
+    booksData2 = await res.json();
+  } catch (err) {
+    console.error("Error loading books 2:", err);
+  }
+}
+loadBooks2();
+
+bookImages2.forEach((img) => {
+  img.addEventListener("click", () => {
+    const index = Number(img.dataset.index);
+    const box = img.parentElement.querySelector(".open-photo");
+    const book = booksData2[index];
+
+    if (!book) return;
+
+    const isOpen = box.innerHTML.trim() !== "";
+
+    openBoxes2.forEach((b) => (b.innerHTML = ""));
+
+    if (!isOpen) {
+      box.innerHTML = createCard(book);
+
+      const titleDetails = box.querySelector(".title-details");
+      titleDetails.textContent = titleDetails.textContent.trim().slice(0, 15) + "..";
+
+      const textDetails = box.querySelector(".text-details");
+      const maxLength = window.innerWidth < 640 ? 45 : 100;
+      textDetails.textContent = textDetails.textContent.trim().slice(0, maxLength) + "...";
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+const bookImages3 = document.querySelectorAll(".labrary3 .language");
+const openBoxes3 = document.querySelectorAll(".labrary3 .open-lan");
+
+let booksData3 = [];
+
+async function loadBooks3() {
+  try {
+    const res = await fetch("http://localhost:3000/cardBook3");
+    booksData3 = await res.json();
+  } catch (err) {
+    console.error("Error loading books 3:", err);
+  }
+}
+loadBooks3();
+
+bookImages3.forEach((img) => {
+  img.addEventListener("click", () => {
+    const index = Number(img.dataset.index);
+    const box = img.parentElement.querySelector(".open-lan");
+    const book = booksData3[index];
+
+    if (!book) return;
+
+    const maxLength = window.innerWidth < 640 ? 45 : 100;
+    const isOpen = box.innerHTML.trim() !== "";
+
+    openBoxes3.forEach((b) => (b.innerHTML = ""));
+
+    if (!isOpen) {
+      box.innerHTML = createCard(book);
+
+      const titleDetails = box.querySelector(".title-details");
+      titleDetails.textContent = titleDetails.textContent.trim().slice(0, 15) + "..";
+
+      const textDetails = box.querySelector(".text-details");
+      textDetails.textContent = textDetails.textContent.trim().slice(0, maxLength) + "...";
+    }
+  });
+});

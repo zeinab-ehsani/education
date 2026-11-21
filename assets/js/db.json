@@ -54,8 +54,106 @@
     "img": "./assets/img/img-home/dovreh4.svg"
   }
 
-    ]
+    ],
+    
+
+
+  "cardBook2":[
+    {
+      "tabTitle": "Photography",
+    "titleDetails": "Photography for Beginners",
+    "textDetails": "Learn camera basics, exposure, composition and lighting to take better photos from day one.",
+    "price": "$110",
+    "img": "./assets/img/img-home/ph1.jpg"
+    },
+ {
+    "tabTitle": "Lightroom",
+    "titleDetails": "Photo Editing with Lightroom",
+    "textDetails": "Master color correction, presets and batch editing to give your photos a professional look.",
+    "price": "$130",
+    "img": "./assets/img/img-home/ph2.jpg"
+  },
+    {
+    "tabTitle": "Portrait",
+    "titleDetails": "Portrait Photography Essentials",
+    "textDetails": "Work with natural and studio light, posing and backgrounds to capture great portraits.",
+    "price": "$160",
+    "img": "./assets/img/img-home/ph3.jpg"
+  },
+  {
+    "tabTitle": "Video",
+    "titleDetails": "Video Shooting and Storytelling",
+    "textDetails": "Plan, shoot and frame short videos that tell a clear story with simple equipment.",
+    "price": "$190",
+    "img": "./assets/img/img-home/ph4.jpg"
+  },
+  {
+    "tabTitle": "Editing",
+    "titleDetails": "Video Editing with Premiere Pro",
+    "textDetails": "Cut, arrange and polish your footage with transitions, audio and color grading.",
+    "price": "$220",
+    "img": "./assets/img/img-home/ph5.jpg"
+  },
+  {
+    "tabTitle": "Drone",
+    "titleDetails": "Aerial Photography with Drones",
+    "textDetails": "Learn safe drone flying and how to capture stunning aerial photos and footage.",
+    "price": "$270",
+    "img": "./assets/img/img-home/ph1.jpg"
+  }
+
+  ],
+   "cardBook3" :[
+  {
+    "tabTitle": "English",
+    "titleDetails": "English Conversation Practice",
+    "textDetails": "Improve your speaking and listening with daily dialogues and real-life situations.",
+    "price": "$100",
+    "img": "./assets/img/img-home/lan1.jpg"
+  },
+  {
+    "tabTitle": "IELTS",
+    "titleDetails": "IELTS Preparation Course",
+    "textDetails": "Practice all four IELTS skills with sample tests, tips and personal feedback.",
+    "price": "$180",
+    "img": "./assets/img/img-home/lan2.jpg"
+  },
+  {
+    "tabTitle": "German",
+    "titleDetails": "German for Beginners",
+    "textDetails": "Learn basic grammar, vocabulary and pronunciation to start speaking German confidently.",
+    "price": "$130",
+    "img": "./assets/img/img-home/lan3.jpg"
+  },
+  {
+    "tabTitle": "French",
+    "titleDetails": "French Made Simple",
+    "textDetails": "Build a solid foundation in French with short lessons, audio and speaking exercises.",
+    "price": "$130",
+    "img": "./assets/img/img-home/lan4.jpg"
+  },
+  {
+    "tabTitle": "Spanish",
+    "titleDetails": "Spanish from Scratch",
+    "textDetails": "Start speaking Spanish quickly with practical phrases and fun, easy exercises.",
+    "price": "$120",
+    "img": "./assets/img/img-home/lan5.jpg"
+  },
+  {
+    "tabTitle": "Business",
+    "titleDetails": "Business English Essentials",
+    "textDetails": "Learn emails, meetings and presentations vocabulary for the international workplace.",
+    "price": "$210",
+    "img": "./assets/img/img-home/lan6.jpg"
+  }
+
+
+]
+
+  
 }
+
+ 
 
 
 
