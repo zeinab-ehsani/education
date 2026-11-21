@@ -17,17 +17,19 @@ let pairs = [
 
 let groups = pairs.map(function (pair) {
   return document.querySelectorAll("." + CSS.escape(pair[0]))
+
+  
 })
 
 dark.addEventListener("click", function () {
-    document.documentElement.setAttribute("data-theme", "dark")
+  document.documentElement.setAttribute("data-theme", "dark")
   pairs.forEach(function (pair, i) {
     groups[i].forEach(el => el.classList.replace(pair[0], pair[1]))
   })
 })
 
 light.addEventListener("click", function () {
-   document.documentElement.setAttribute("data-theme", "light")
+  document.documentElement.setAttribute("data-theme", "light")
   pairs.forEach(function (pair, i) {
     groups[i].forEach(el => el.classList.replace(pair[1], pair[0]))
   })
@@ -277,7 +279,7 @@ bookImages.forEach((img) => {
 
       let textDetails = document.querySelectorAll(".text-details");
 
-      let maxLength = window.innerWidth < 640 ? 45 : 100 ;
+      let maxLength = window.innerWidth < 640 ? 45 : 100;
 
       textDetails.forEach((elem2) => {
         let text2 = elem2.textContent.trim();
@@ -398,3 +400,57 @@ bookImages3.forEach((img) => {
     }
   });
 });
+
+
+let btnSub = document.querySelector(".btn-sub")
+let loading = document.querySelector(".loading")
+
+let textFinally = document.querySelector(".text-sub-finally")
+
+let inputSub = document.querySelector(".input-sub")
+
+let textSub = document.querySelector(".text-sub")
+let endSub = document.querySelector(".end-sub")
+sub = true
+
+
+
+
+btnSub.addEventListener("click", function () {
+
+
+  if (inputSub.value.trim() === "") {
+    console.log("hey")
+
+  }
+
+  else {
+
+    if(sub===true){
+
+
+    loading.classList.remove("hidden")
+    textSub.classList.add("hidden")
+    textFinally.classList.remove("hidden")
+    sub=false
+    
+    setTimeout(function () {
+      endSub.classList.remove("hidden")
+      textFinally.classList.add("hidden")
+      loading.classList.add("hidden")
+
+    }, 3000);
+    }
+else{
+      console.log("heyyyy")
+
+}
+
+
+
+
+
+
+  }
+
+})
