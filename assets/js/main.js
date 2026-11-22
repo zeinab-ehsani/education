@@ -13,16 +13,20 @@ let pairs = [
   //  ["text-white", "text-[#ff1493]"],
 
   ["text-white", "text-[#161A20]"],
+  ["text-[#252641]", "text-[#f5f5f5]"],  
+["text-[#696984]", "text-[#b8b8c8]"],   
+["text-[#5F5F7E]", "text-[#b8b8c8]"],
 ]
-
+let header=document.querySelector("header")
 let groups = pairs.map(function (pair) {
   return document.querySelectorAll("." + CSS.escape(pair[0]))
 
-  
+
 })
 
 dark.addEventListener("click", function () {
   document.documentElement.setAttribute("data-theme", "dark")
+  header.style.backgroundImage="url('assets/img/img-home/header.dark3.png')"
   pairs.forEach(function (pair, i) {
     groups[i].forEach(el => el.classList.replace(pair[0], pair[1]))
   })
@@ -30,6 +34,7 @@ dark.addEventListener("click", function () {
 
 light.addEventListener("click", function () {
   document.documentElement.setAttribute("data-theme", "light")
+  header.style.backgroundImage="url('assets/img/img-home/Header\ \(1\)new.svg')"
   pairs.forEach(function (pair, i) {
     groups[i].forEach(el => el.classList.replace(pair[1], pair[0]))
   })
