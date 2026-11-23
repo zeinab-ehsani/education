@@ -225,9 +225,87 @@
     "completed": 3,
     "total": 9
   }
-]
+],
 
-  
+
+
+"categories": [
+  {
+    "id": 1,
+    "name": "Design",
+    "color": "#C7EBEA",
+    "img": "./assets/img/Course/categori1.svg",
+    "description": "UI/UX, graphic and brand design courses taught by working designers."
+  },
+  {
+    "id": 2,
+    "name": "Development",
+    "color": "#CFD4FA",
+    "img": "./assets/img/Course/categori2.svg",
+    "description": "Web, mobile and cloud development from your first line of code to production."
+  },
+  {
+    "id": 3,
+    "name": "Data Science",
+    "color": "#E3EEFF",
+    "img": "./assets/img/Course/categori3.svg",
+    "description": "Analyse data with Python and SQL and get started with machine learning."
+  },
+  {
+    "id": 4,
+    "name": "Business",
+    "color": "#AEF0E6",
+    "img": "./assets/img/Course/categori4.svg",
+    "description": "Management, strategy and negotiation skills for teams and founders."
+  },
+  {
+    "id": 5,
+    "name": "Marketing",
+    "color": "#FFDDB2",
+    "img": "./assets/img/Course/categori5.svg",
+    "description": "Digital marketing, SEO and social media strategies that grow audiences."
+  },
+  {
+    "id": 6,
+    "name": "Photography",
+    "color": "#F9CFCB",
+    "img": "./assets/img/Course/categori6.svg",
+    "description": "Learn composition, lighting and editing with hands-on assignments."
+  },
+  {
+    "id": 7,
+    "name": "Acting",
+    "color": "#BDBDC9",
+    "img": "./assets/img/Course/categori7.svg",
+    "description": "Build confidence on camera and on stage with voice and movement training."
+  },
+  {
+    "id": 8,
+    "name": "Finance",
+    "color": "#AEF0E6",
+    "img": "./assets/img/Course/categori8.svg",
+    "description": "Personal finance, accounting and investing explained in plain language."
+  }
+]  ,
+
+"courses": [
+  { "id": 1,  "title": "UI/UX Design Fundamentals",     "categoryId": 1, "category": "Design",       "duration": "3 Month", "description": "Learn user research, wireframing and prototyping from scratch.",                      "teacher": "Sophia Martin",  "teacherImage": "https://i.pravatar.cc/150?img=11", "oldPrice": 100, "price": 80, "img": "./assets/img/Course/Rectangle 33.svg", "recommended": true },
+  { "id": 2,  "title": "Brand Identity Design",         "categoryId": 1, "category": "Design",       "duration": "2 Month", "description": "Create a logo, colour palette and brand guidelines for a real company.",              "teacher": "Daniel Reyes",   "teacherImage": "https://i.pravatar.cc/150?img=12", "oldPrice": 120, "price": 90, "img": "./assets/img/Course/Rectangle 33.svg", "recommended": false },
+  { "id": 3,  "title": "JavaScript from Zero to Hero",  "categoryId": 2, "category": "Development",  "duration": "3 Month", "description": "Master the fundamentals of JavaScript with hands-on projects.",                       "teacher": "Priya Nair",     "teacherImage": "https://i.pravatar.cc/150?img=13", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/Rectangle 33.svg", "recommended": true },
+  { "id": 4,  "title": "AWS Certified Solutions Architect", "categoryId": 2, "category": "Development", "duration": "4 Month", "description": "Prepare for the AWS exam with guided labs and practice questions.",              "teacher": "Marcus Webb",    "teacherImage": "https://i.pravatar.cc/150?img=14", "oldPrice": 140, "price": 99, "img": "./assets/img/Course/Rectangle 33.svg", "recommended": true },
+  { "id": 5,  "title": "Python for Data Analysis",      "categoryId": 3, "category": "Data Science", "duration": "3 Month", "description": "Clean, explore and visualise real datasets with pandas and Matplotlib.",              "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/card2.svg", "recommended": true },
+  { "id": 6,  "title": "SQL Essentials",                "categoryId": 3, "category": "Data Science", "duration": "2 Month", "description": "Query and combine data with confidence using SQL.",                                  "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": false },
+  { "id": 7,  "title": "Project Management Essentials", "categoryId": 4, "category": "Business",     "duration": "2 Month", "description": "Plan, run and deliver projects on time and on budget.",                              "teacher": "James Okafor",   "teacherImage": "https://i.pravatar.cc/150?img=16", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/card1.svg", "recommended": true },
+  { "id": 8,  "title": "Negotiation Skills",            "categoryId": 4, "category": "Business",     "duration": "1 Month", "description": "Prepare and run negotiations with clear, practical frameworks.",                     "teacher": "James Okafor",   "teacherImage": "https://i.pravatar.cc/150?img=16", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card2.svg", "recommended": false },
+  { "id": 9,  "title": "Digital Marketing Masterclass", "categoryId": 5, "category": "Marketing",    "duration": "3 Month", "description": "A complete introduction to SEO, content, email and paid advertising.",               "teacher": "Hannah Schmidt", "teacherImage": "https://i.pravatar.cc/150?img=17", "oldPrice": 120, "price": 89, "img": "./assets/img/Course/card3.png", "recommended": true },
+  { "id": 10, "title": "SEO Step by Step",              "categoryId": 5, "category": "Marketing",    "duration": "2 Month", "description": "Rank higher with keyword research and on-page optimisation.",                        "teacher": "Hannah Schmidt", "teacherImage": "https://i.pravatar.cc/150?img=17", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card1.svg", "recommended": false },
+  { "id": 11, "title": "Portrait Photography",          "categoryId": 6, "category": "Photography",  "duration": "2 Month", "description": "Shoot flattering portraits with natural and studio light.",                          "teacher": "Kenji Watanabe", "teacherImage": "https://i.pravatar.cc/150?img=18", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card2.svg", "recommended": true },
+  { "id": 12, "title": "Lightroom Editing Workflow",    "categoryId": 6, "category": "Photography",  "duration": "1 Month", "description": "Organise, edit and export your photos faster with a repeatable workflow.",           "teacher": "Kenji Watanabe", "teacherImage": "https://i.pravatar.cc/150?img=18", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": false },
+  { "id": 13, "title": "Acting for Camera",             "categoryId": 7, "category": "Acting",       "duration": "2 Month", "description": "Adapt your acting to the screen with self-tapes and scene study.",                   "teacher": "Olivia Bennett", "teacherImage": "https://i.pravatar.cc/150?img=19", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/card1.svg", "recommended": false },
+  { "id": 14, "title": "Voice and Speech Training",     "categoryId": 7, "category": "Acting",       "duration": "2 Month", "description": "Strengthen breath, tone and clarity with daily vocal exercises.",                    "teacher": "Olivia Bennett", "teacherImage": "https://i.pravatar.cc/150?img=19", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card2.svg", "recommended": false },
+  { "id": 15, "title": "Personal Finance Fundamentals", "categoryId": 8, "category": "Finance",      "duration": "2 Month", "description": "Budget, save and manage debt with a clear and simple plan.",                         "teacher": "Omar Haddad",    "teacherImage": "https://i.pravatar.cc/150?img=20", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": true },
+  { "id": 16, "title": "Investing for Beginners",       "categoryId": 8, "category": "Finance",      "duration": "2 Month", "description": "Understand risk, diversification and long-term investing.",                          "teacher": "Omar Haddad",    "teacherImage": "https://i.pravatar.cc/150?img=20", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card1.svg", "recommended": false }
+]
 }
 
  

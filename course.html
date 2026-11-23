@@ -132,31 +132,61 @@
 
     <section
         class="welcome-course bg-[#9DCCFF]/20 w-full px-4 py-6 md:px-8 md:py-8 xl:px-16 xl:py-10 2xl:px-[113px] 2xl:py-[50px]">
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between items-center">
             <h class="text-xl  md:text-2xl xl:text-3xl 2xl:text-[36px] text-[#252641] font-bold">Welcome back, ready for
                 your next lesson?</h>
-            <a class="text-[#49BBBD] font-bold font-[20px]">View hisotry</a>
+            <a class="text-[#49BBBD] font-bold font-[20px]" href="./course-calendar.html">View hisotry</a>
         </div>
         <div class="swiper welcome-swiper mt-4 md:mt-6 xl:mt-9 2xl:mt-[50px]">
             <div class="swiper-wrapper">
 
-
+                <!-- 
                 <div class="swiper-slide">
 
 
-                </div>
+                </div> -->
             </div>
-            <div class="swiper-button-next bg-[#49BBBD]"></div>
-            <div class="swiper-button-prev bg-[#49BBBD]"></div>
+
+            <div class="flex justify-end gap-2 mt-4 md:mt-6 xl:mt-8">
+                <button
+                    class="welcome-prev w-7 h-7 md:w-8 md:h-8 2xl:w-10 2xl:h-10 rounded bg-[#7eccce] text-white flex items-center justify-center [&.swiper-button-disabled]:opacity-50">
+                    <svg class="w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button
+                    class="welcome-next w-7 h-7 md:w-8 md:h-8 2xl:w-10 2xl:h-10 rounded bg-[#7eccce] text-white flex items-center justify-center [&.swiper-button-disabled]:opacity-50">
+                    <svg class="w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- start section category -->
+<section class="category-main px-4 md:px-8 xl:px-16 2xl:px-[120px] mt-10 md:mt-14 xl:mt-16 2xl:mt-[80px]">
+    
+    <h2 class="text-lg md:text-2xl xl:text-3xl 2xl:text-[36px] text-[#252641] font-semibold">
+            Choice favourite course from top category
+        </h2>
+        <div
+            class="category flex flex-wrap mt-[53px] gap-[var(--gap)] [--gap:1rem] md:[--gap:1.5rem] 2xl:[--gap:2.5rem]">
         </div>
 
     </section>
 
 
 
+    <!-- end section category -->
 
+<!-- start swiper Recommended  -->
 
-
+<!-- end swiper Recommended  -->
 
 
 
