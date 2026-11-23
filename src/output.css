@@ -7,6 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-gray-100: oklch(96.7% 0.003 264.542);
@@ -2004,6 +2005,9 @@
   .-mt-\[27\.5\%\] {
     margin-top: calc(27.5% * -1);
   }
+  .mt-0 {
+    margin-top: 0px;
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -2942,6 +2946,9 @@
   }
   .bg-red-300 {
     background-color: var(--color-red-300);
+  }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
