@@ -148,6 +148,83 @@
   }
 
 
+],
+"course":[
+{
+  "imgCourse":"./assets/img/Course/card1.svg",
+  "titlecourse":"AWS Certified Solutions Architect"
+
+
+},
+{
+  "imgCourse":"./assets/img/Course/card2.svg",
+  "titlecourse":"AWS Certified Solutions Architect"
+
+
+}
+
+,{
+  "imgCourse":"./assets/img/Course/card3.png",
+  "titlecourse":"AWS Certified Solutions Architect"
+
+
+}
+],
+"welcomeCourses": [
+  {
+    "id": 1,
+    "title": "AWS Certified Solutions Architect",
+    "image": "./assets/img/Course/card1.svg",
+    "teacher": "Lina",
+    "teacherImage": "./assets/img/Course/linaprofile.svg",
+    "completed": 5,
+    "total": 7
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design Fundamentals",
+    "image": "./assets/img/Course/card2.svg",
+    "teacher": "Lina",
+    "teacherImage": "./assets/img/Course/linaprofile.svg",
+    "completed": 2,
+    "total": 10
+  },
+  {
+    "id": 3,
+    "title": "JavaScript from Zero to Hero",
+    "image": "./assets/img/Course/card3.png",
+    "teacher": "Lina",
+    "teacherImage": "./assets/img/Course/linaprofile.svg",
+    "completed": 8,
+    "total": 12
+  },
+  {
+    "id": 4,
+    "title": "Digital Marketing Masterclass",
+    "image": "./assets/img/Course/card1.svg",
+    "teacher": "Lina",
+    "teacherImage": "./assets/img/Course/linaprofile.svg",
+    "completed": 1,
+    "total": 6
+  },
+  {
+    "id": 5,
+    "title": "Portrait Photography",
+    "image": "./assets/img/Course/card2.svg",
+    "teacher": "Lina",
+    "teacherImage": "./assets/img/Course/linaprofile.svg",
+    "completed": 4,
+    "total": 5
+  },
+  {
+    "id": 6,
+    "title": "Business Strategy 101",
+    "image": "./assets/img/Course/card3.png",
+    "teacher": "Lina",
+    "teacherImage": "./assets/img/Course/linaprofile.svg",
+    "completed": 3,
+    "total": 9
+  }
 ]
 
   

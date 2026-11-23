@@ -407,3 +407,25 @@ bookImages3.forEach((img) => {
 });
 
 
+// start lan js
+
+let langEn=document.querySelectorAll(".lang-en")
+let langFa=document.querySelectorAll(".lang-fa")
+
+let btnEn=document.querySelector(".btn-en")
+let btnFa=document.querySelector(".btn-fa")
+
+btnFa.addEventListener("click",function(){
+langEn.forEach((fa)=>{
+  fa.classList.add("hidden")
+
+})
+langFa.forEach((elem2)=>{
+
+  elem2.classList.remove("hidden")
+})
+
+})
+
+
+// end lan js
