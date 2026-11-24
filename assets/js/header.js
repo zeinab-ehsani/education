@@ -42,7 +42,7 @@ document.getElementById("header-placeholder").innerHTML=`
             </div>
             <div class="navbar-start">
 
-                <a href="./course.html"><img src="./assets/img/course/logo.lightmenu.svg" alt=""></a>
+                <a href=""><img src="./assets/img/course/logo.lightmenu.svg" alt=""></a>
             </div>
 
             <div class="navbar-center hidden lg:flex">
