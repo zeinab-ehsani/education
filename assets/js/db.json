@@ -1,175 +1,295 @@
 {
-    "products":[
-{
-  "tabTitle": "Photoshop",
+   "products": [
+  {
+    "tabTitle": "Photoshop",
     "titleDetails": "Adobe Photoshop for Beginners",
     "textDetails": "Learn photo editing, retouching and layer-based design from scratch with hands-on projects.",
     "price": "$120",
-    "img": "./assets/img/img-home/Rectangle 34.svg"
-
-},
-{
- "tabTitle": "Illustrator",
+    "img": "./assets/img/img-home/Rectangle 34.svg",
+    "category": "Graphic Design",
+    "language": "English",
+    "partner": "Adobe",
+    "program": "Short Course",
+    "availability": "Available",
+    "learningType": "Online"
+  },
+  {
+    "tabTitle": "Illustrator",
     "titleDetails": "Vector Illustration with Illustrator",
     "textDetails": "Create logos, icons and scalable artwork using the pen tool, shapes and color palettes.",
     "price": "$140",
-    "img": "./assets/img/img-home/doreh2.svg"
-
-
-},
- {
+    "img": "./assets/img/img-home/doreh2.svg",
+    "category": "Graphic Design",
+    "language": "English",
+    "partner": "Adobe",
+    "program": "Short Course",
+    "availability": "Starting Soon",
+    "learningType": "Self-paced"
+  },
+  {
     "tabTitle": "UI Design",
     "titleDetails": "UI Design Fundamentals",
     "textDetails": "Understand layout, typography and color systems to design clean and modern interfaces.",
     "price": "$200",
-    "img": "./assets/img/img-home/dovreh3.svg"
+    "img": "./assets/img/img-home/dovreh3.svg",
+    "category": "UI/UX Design",
+    "language": "Persian",
+    "partner": "Coursera",
+    "program": "Certificate",
+    "availability": "Available",
+    "learningType": "Online"
   },
-
   {
     "tabTitle": "Figma",
     "titleDetails": "Figma from Zero to Pro",
     "textDetails": "Build responsive designs, components and prototypes in Figma step by step.",
     "price": "$180",
-    "img": "./assets/img/img-home/dovreh4.svg"
+    "img": "./assets/img/img-home/dovreh4.svg",
+    "category": "UI/UX Design",
+    "language": "English",
+    "partner": "Figma",
+    "program": "Certificate",
+    "availability": "Available",
+    "learningType": "Self-paced"
   },
   {
     "tabTitle": "Typography",
     "titleDetails": "The Art of Typography",
     "textDetails": "Learn how to choose, pair and arrange fonts to make your designs readable and beautiful.",
     "price": "$90",
-    "img": "./assets/img/img-home/doreh2.svg"
+    "img": "./assets/img/img-home/doreh2.svg",
+    "category": "Graphic Design",
+    "language": "Persian",
+    "partner": "Udemy",
+    "program": "Short Course",
+    "availability": "Full",
+    "learningType": "In-person"
   },
   {
     "tabTitle": "Branding",
     "titleDetails": "Brand Identity Design",
     "textDetails": "Design a complete brand identity including logo, colors, typography and style guide.",
     "price": "$250",
-    "img": "./assets/img/img-home/dovreh3.svg"
+    "img": "./assets/img/img-home/dovreh3.svg",
+    "category": "Branding",
+    "language": "English",
+    "partner": "Coursera",
+    "program": "Diploma",
+    "availability": "Starting Soon",
+    "learningType": "Online"
   },
   {
     "tabTitle": "Motion",
     "titleDetails": "Intro to Motion Graphics",
     "textDetails": "Bring your designs to life with basic animation principles and After Effects workflows.",
     "price": "$300",
-    "img": "./assets/img/img-home/dovreh4.svg"
+    "img": "./assets/img/img-home/dovreh4.svg",
+    "category": "Motion Graphics",
+    "language": "English",
+    "partner": "Adobe",
+    "program": "Diploma",
+    "availability": "Available",
+    "learningType": "In-person"
   }
-
-    ],
+],
     
 
 
-  "cardBook2":[
-    {
-      "tabTitle": "Photography",
+"cardBook2": [
+  {
+    "tabTitle": "Photography",
     "titleDetails": "Photography for Beginners",
     "textDetails": "Learn camera basics, exposure, composition and lighting to take better photos from day one.",
     "price": "$110",
-    "img": "./assets/img/img-home/ph1.jpg"
-    },
- {
+    "img": "./assets/img/img-home/ph1.jpg",
+    "category": "Photography",
+    "language": "English",
+    "partner": "Udemy",
+    "program": "Short Course",
+    "availability": "Available",
+    "learningType": "Online"
+  },
+  {
     "tabTitle": "Lightroom",
     "titleDetails": "Photo Editing with Lightroom",
     "textDetails": "Master color correction, presets and batch editing to give your photos a professional look.",
     "price": "$130",
-    "img": "./assets/img/img-home/ph2.jpg"
+    "img": "./assets/img/img-home/ph2.jpg",
+    "category": "Photography",
+    "language": "Persian",
+    "partner": "Adobe",
+    "program": "Short Course",
+    "availability": "Available",
+    "learningType": "Self-paced"
   },
-    {
+  {
     "tabTitle": "Portrait",
     "titleDetails": "Portrait Photography Essentials",
     "textDetails": "Work with natural and studio light, posing and backgrounds to capture great portraits.",
     "price": "$160",
-    "img": "./assets/img/img-home/ph3.jpg"
+    "img": "./assets/img/img-home/ph3.jpg",
+    "category": "Photography",
+    "language": "English",
+    "partner": "Coursera",
+    "program": "Certificate",
+    "availability": "Starting Soon",
+    "learningType": "In-person"
   },
   {
     "tabTitle": "Video",
     "titleDetails": "Video Shooting and Storytelling",
     "textDetails": "Plan, shoot and frame short videos that tell a clear story with simple equipment.",
     "price": "$190",
-    "img": "./assets/img/img-home/ph4.jpg"
+    "img": "./assets/img/img-home/ph4.jpg",
+    "category": "Video Production",
+    "language": "Persian",
+    "partner": "Udemy",
+    "program": "Certificate",
+    "availability": "Available",
+    "learningType": "Online"
   },
   {
     "tabTitle": "Editing",
     "titleDetails": "Video Editing with Premiere Pro",
     "textDetails": "Cut, arrange and polish your footage with transitions, audio and color grading.",
     "price": "$220",
-    "img": "./assets/img/img-home/ph5.jpg"
+    "img": "./assets/img/img-home/ph5.jpg",
+    "category": "Video Production",
+    "language": "English",
+    "partner": "Adobe",
+    "program": "Diploma",
+    "availability": "Full",
+    "learningType": "Online"
   },
   {
     "tabTitle": "Drone",
     "titleDetails": "Aerial Photography with Drones",
     "textDetails": "Learn safe drone flying and how to capture stunning aerial photos and footage.",
     "price": "$270",
-    "img": "./assets/img/img-home/ph1.jpg"
+    "img": "./assets/img/img-home/ph1.jpg",
+    "category": "Photography",
+    "language": "English",
+    "partner": "Coursera",
+    "program": "Diploma",
+    "availability": "Starting Soon",
+    "learningType": "In-person"
   }
-
-  ],
-   "cardBook3" :[
+],
+"cardBook3": [
   {
     "tabTitle": "English",
     "titleDetails": "English Conversation Practice",
     "textDetails": "Improve your speaking and listening with daily dialogues and real-life situations.",
     "price": "$100",
-    "img": "./assets/img/img-home/lan1.jpg"
+    "img": "./assets/img/img-home/lan1.jpg",
+    "category": "Languages",
+    "language": "English",
+    "partner": "Cambridge",
+    "program": "Short Course",
+    "availability": "Available",
+    "learningType": "Online"
   },
   {
     "tabTitle": "IELTS",
     "titleDetails": "IELTS Preparation Course",
     "textDetails": "Practice all four IELTS skills with sample tests, tips and personal feedback.",
     "price": "$180",
-    "img": "./assets/img/img-home/lan2.jpg"
+    "img": "./assets/img/img-home/lan2.jpg",
+    "category": "Languages",
+    "language": "Persian",
+    "partner": "British Council",
+    "program": "Certificate",
+    "availability": "Available",
+    "learningType": "In-person"
   },
   {
     "tabTitle": "German",
     "titleDetails": "German for Beginners",
     "textDetails": "Learn basic grammar, vocabulary and pronunciation to start speaking German confidently.",
     "price": "$130",
-    "img": "./assets/img/img-home/lan3.jpg"
+    "img": "./assets/img/img-home/lan3.jpg",
+    "category": "Languages",
+    "language": "English",
+    "partner": "Goethe Institut",
+    "program": "Short Course",
+    "availability": "Starting Soon",
+    "learningType": "Online"
   },
   {
     "tabTitle": "French",
     "titleDetails": "French Made Simple",
     "textDetails": "Build a solid foundation in French with short lessons, audio and speaking exercises.",
     "price": "$130",
-    "img": "./assets/img/img-home/lan4.jpg"
+    "img": "./assets/img/img-home/lan4.jpg",
+    "category": "Languages",
+    "language": "Persian",
+    "partner": "Alliance Française",
+    "program": "Short Course",
+    "availability": "Full",
+    "learningType": "Self-paced"
   },
   {
     "tabTitle": "Spanish",
     "titleDetails": "Spanish from Scratch",
     "textDetails": "Start speaking Spanish quickly with practical phrases and fun, easy exercises.",
     "price": "$120",
-    "img": "./assets/img/img-home/lan5.jpg"
+    "img": "./assets/img/img-home/lan5.jpg",
+    "category": "Languages",
+    "language": "English",
+    "partner": "Udemy",
+    "program": "Short Course",
+    "availability": "Available",
+    "learningType": "Self-paced"
   },
   {
     "tabTitle": "Business",
     "titleDetails": "Business English Essentials",
     "textDetails": "Learn emails, meetings and presentations vocabulary for the international workplace.",
     "price": "$210",
-    "img": "./assets/img/img-home/lan6.jpg"
+    "img": "./assets/img/img-home/lan6.jpg",
+    "category": "Business",
+    "language": "English",
+    "partner": "Coursera",
+    "program": "Diploma",
+    "availability": "Starting Soon",
+    "learningType": "Online"
   }
-
-
 ],
-"course":[
-{
-  "imgCourse":"./assets/img/Course/card1.svg",
-  "titlecourse":"AWS Certified Solutions Architect"
 
-
-},
-{
-  "imgCourse":"./assets/img/Course/card2.svg",
-  "titlecourse":"AWS Certified Solutions Architect"
-
-
-}
-
-,{
-  "imgCourse":"./assets/img/Course/card3.png",
-  "titlecourse":"AWS Certified Solutions Architect"
-
-
-}
+"course": [
+  {
+    "imgCourse": "./assets/img/Course/card1.svg",
+    "titlecourse": "AWS Certified Solutions Architect",
+    "category": "Development",
+    "language": "English",
+    "partner": "Amazon",
+    "program": "Certificate",
+    "availability": "Available",
+    "learningType": "Online"
+  },
+  {
+    "imgCourse": "./assets/img/Course/card2.svg",
+    "titlecourse": "AWS Certified Solutions Architect",
+    "category": "Development",
+    "language": "Persian",
+    "partner": "Amazon",
+    "program": "Certificate",
+    "availability": "Starting Soon",
+    "learningType": "Self-paced"
+  },
+  {
+    "imgCourse": "./assets/img/Course/card3.png",
+    "titlecourse": "AWS Certified Solutions Architect",
+    "category": "Development",
+    "language": "English",
+    "partner": "Amazon",
+    "program": "Diploma",
+    "availability": "Full",
+    "learningType": "In-person"
+  }
 ],
+
+
 "welcomeCourses": [
   {
     "id": 1,
@@ -289,33 +409,33 @@
 ]  ,
 
 "courses": [
-  { "id": 1,  "title": "UI/UX Design Fundamentals",     "categoryId": 1, "category": "Design",       "duration": "3 Month", "description": "Learn user research, wireframing and prototyping from scratch.",                      "teacher": "Sophia Martin",  "teacherImage": "https://i.pravatar.cc/150?img=11", "oldPrice": 100, "price": 80, "img": "./assets/img/Course/recommend2.jpg", "recommended": true },
-  { "id": 2,  "title": "Brand Identity Design",         "categoryId": 1, "category": "Design",       "duration": "2 Month", "description": "Create a logo, colour palette and brand guidelines for a real company.",              "teacher": "Daniel Reyes",   "teacherImage": "https://i.pravatar.cc/150?img=12", "oldPrice": 120, "price": 90, "img": "./assets/img/Course/ho.jpg", "recommended": false },
-  { "id": 3,  "title": "JavaScript from Zero to Hero",  "categoryId": 2, "category": "Development",  "duration": "3 Month", "description": "Master the fundamentals of JavaScript with hands-on projects.",                       "teacher": "Priya Nair",     "teacherImage": "https://i.pravatar.cc/150?img=13", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/recommend1.jpg", "recommended": true },
-  { "id": 4,  "title": "AWS Certified Solutions Architect", "categoryId": 2, "category": "Development", "duration": "4 Month", "description": "Prepare for the AWS exam with guided labs and practice questions.",              "teacher": "Marcus Webb",    "teacherImage": "https://i.pravatar.cc/150?img=14", "oldPrice": 140, "price": 99, "img": "./assets/img/Course/recommend3.jpg", "recommended": true },
-  { "id": 5,  "title": "Python for Data Analysis",      "categoryId": 3, "category": "Data Science", "duration": "3 Month", "description": "Clean, explore and visualise real datasets with pandas and Matplotlib.",              "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/recommend4.jpg", "recommended": true },
-  { "id": 6,  "title": "SQL Essentials",                "categoryId": 3, "category": "Data Science", "duration": "2 Month", "description": "Query and combine data with confidence using SQL.",                                  "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": false },
-  { "id": 7,  "title": "Project Management Essentials", "categoryId": 4, "category": "Business",     "duration": "2 Month", "description": "Plan, run and deliver projects on time and on budget.",                              "teacher": "James Okafor",   "teacherImage": "https://i.pravatar.cc/150?img=16", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/card1.svg", "recommended": true },
-  { "id": 8,  "title": "Negotiation Skills",            "categoryId": 4, "category": "Business",     "duration": "1 Month", "description": "Prepare and run negotiations with clear, practical frameworks.",                     "teacher": "James Okafor",   "teacherImage": "https://i.pravatar.cc/150?img=16", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card2.svg", "recommended": false },
-  { "id": 9,  "title": "Digital Marketing Masterclass", "categoryId": 5, "category": "Marketing",    "duration": "3 Month", "description": "A complete introduction to SEO, content, email and paid advertising.",               "teacher": "Hannah Schmidt", "teacherImage": "https://i.pravatar.cc/150?img=17", "oldPrice": 120, "price": 89, "img": "./assets/img/Course/card3.png", "recommended": true },
-  { "id": 10, "title": "SEO Step by Step",              "categoryId": 5, "category": "Marketing",    "duration": "2 Month", "description": "Rank higher with keyword research and on-page optimisation.",                        "teacher": "Hannah Schmidt", "teacherImage": "https://i.pravatar.cc/150?img=17", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card1.svg", "recommended": false },
-  { "id": 11, "title": "Portrait Photography",          "categoryId": 6, "category": "Photography",  "duration": "2 Month", "description": "Shoot flattering portraits with natural and studio light.",                          "teacher": "Kenji Watanabe", "teacherImage": "https://i.pravatar.cc/150?img=18", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card2.svg", "recommended": true },
-  { "id": 12, "title": "Lightroom Editing Workflow",    "categoryId": 6, "category": "Photography",  "duration": "1 Month", "description": "Organise, edit and export your photos faster with a repeatable workflow.",           "teacher": "Kenji Watanabe", "teacherImage": "https://i.pravatar.cc/150?img=18", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": false },
-  { "id": 13, "title": "Acting for Camera",             "categoryId": 7, "category": "Acting",       "duration": "2 Month", "description": "Adapt your acting to the screen with self-tapes and scene study.",                   "teacher": "Olivia Bennett", "teacherImage": "https://i.pravatar.cc/150?img=19", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/card1.svg", "recommended": false },
-  { "id": 14, "title": "Voice and Speech Training",     "categoryId": 7, "category": "Acting",       "duration": "2 Month", "description": "Strengthen breath, tone and clarity with daily vocal exercises.",                    "teacher": "Olivia Bennett", "teacherImage": "https://i.pravatar.cc/150?img=19", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card2.svg", "recommended": false },
-  { "id": 15, "title": "Personal Finance Fundamentals", "categoryId": 8, "category": "Finance",      "duration": "2 Month", "description": "Budget, save and manage debt with a clear and simple plan.",                         "teacher": "Omar Haddad",    "teacherImage": "https://i.pravatar.cc/150?img=20", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": true },
-  { "id": 16, "title": "Investing for Beginners",       "categoryId": 8, "category": "Finance",      "duration": "2 Month", "description": "Understand risk, diversification and long-term investing.",                          "teacher": "Omar Haddad",    "teacherImage": "https://i.pravatar.cc/150?img=20", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card1.svg", "recommended": false }
+  { "id": 1,  "title": "UI/UX Design Fundamentals",     "categoryId": 1, "category": "Design",       "duration": "3 Month", "description": "Learn user research, wireframing and prototyping from scratch.",                      "teacher": "Sophia Martin",  "teacherImage": "https://i.pravatar.cc/150?img=11", "oldPrice": 100, "price": 80, "img": "./assets/img/Course/recommend2.jpg", "recommended": true,  "language": "English", "partner": "Google",    "program": "Certificate",  "availability": "Available",     "learningType": "Online" },
+  { "id": 2,  "title": "Brand Identity Design",         "categoryId": 1, "category": "Design",       "duration": "2 Month", "description": "Create a logo, colour palette and brand guidelines for a real company.",              "teacher": "Daniel Reyes",   "teacherImage": "https://i.pravatar.cc/150?img=12", "oldPrice": 120, "price": 90, "img": "./assets/img/Course/ho.jpg", "recommended": false, "language": "Persian", "partner": "Adobe",     "program": "Short Course", "availability": "Starting Soon", "learningType": "Self-paced" },
+  { "id": 3,  "title": "JavaScript from Zero to Hero",  "categoryId": 2, "category": "Development",  "duration": "3 Month", "description": "Master the fundamentals of JavaScript with hands-on projects.",                       "teacher": "Priya Nair",     "teacherImage": "https://i.pravatar.cc/150?img=13", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/recommend1.jpg", "recommended": true,  "language": "English", "partner": "Coursera",  "program": "Certificate",  "availability": "Available",     "learningType": "Online" },
+  { "id": 4,  "title": "AWS Certified Solutions Architect", "categoryId": 2, "category": "Development", "duration": "4 Month", "description": "Prepare for the AWS exam with guided labs and practice questions.",              "teacher": "Marcus Webb",    "teacherImage": "https://i.pravatar.cc/150?img=14", "oldPrice": 140, "price": 99, "img": "./assets/img/Course/recommend3.jpg", "recommended": true,  "language": "English", "partner": "Amazon",    "program": "Diploma",      "availability": "Available",     "learningType": "In-person" },
+  { "id": 5,  "title": "Python for Data Analysis",      "categoryId": 3, "category": "Data Science", "duration": "3 Month", "description": "Clean, explore and visualise real datasets with pandas and Matplotlib.",              "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/recommend4.jpg", "recommended": true,  "language": "Persian", "partner": "Udemy",     "program": "Certificate",  "availability": "Starting Soon", "learningType": "Online" },
+  { "id": 6,  "title": "SQL Essentials",                "categoryId": 3, "category": "Data Science", "duration": "2 Month", "description": "Query and combine data with confidence using SQL.",                                  "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": false, "language": "English", "partner": "Microsoft", "program": "Short Course", "availability": "Available",     "learningType": "Self-paced" },
+  { "id": 7,  "title": "Project Management Essentials", "categoryId": 4, "category": "Business",     "duration": "2 Month", "description": "Plan, run and deliver projects on time and on budget.",                              "teacher": "James Okafor",   "teacherImage": "https://i.pravatar.cc/150?img=16", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/card1.svg", "recommended": true,  "language": "English", "partner": "LinkedIn",  "program": "Certificate",  "availability": "Full",          "learningType": "Online" },
+  { "id": 8,  "title": "Negotiation Skills",            "categoryId": 4, "category": "Business",     "duration": "1 Month", "description": "Prepare and run negotiations with clear, practical frameworks.",                     "teacher": "James Okafor",   "teacherImage": "https://i.pravatar.cc/150?img=16", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card2.svg", "recommended": false, "language": "Persian", "partner": "Coursera",  "program": "Short Course", "availability": "Available",     "learningType": "In-person" },
+  { "id": 9,  "title": "Digital Marketing Masterclass", "categoryId": 5, "category": "Marketing",    "duration": "3 Month", "description": "A complete introduction to SEO, content, email and paid advertising.",               "teacher": "Hannah Schmidt", "teacherImage": "https://i.pravatar.cc/150?img=17", "oldPrice": 120, "price": 89, "img": "./assets/img/Course/card3.png", "recommended": true,  "language": "English", "partner": "Meta",      "program": "Diploma",      "availability": "Starting Soon", "learningType": "Online" },
+  { "id": 10, "title": "SEO Step by Step",              "categoryId": 5, "category": "Marketing",    "duration": "2 Month", "description": "Rank higher with keyword research and on-page optimisation.",                        "teacher": "Hannah Schmidt", "teacherImage": "https://i.pravatar.cc/150?img=17", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card1.svg", "recommended": false, "language": "Persian", "partner": "Google",    "program": "Short Course", "availability": "Available",     "learningType": "Self-paced" },
+  { "id": 11, "title": "Portrait Photography",          "categoryId": 6, "category": "Photography",  "duration": "2 Month", "description": "Shoot flattering portraits with natural and studio light.",                          "teacher": "Kenji Watanabe", "teacherImage": "https://i.pravatar.cc/150?img=18", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card2.svg", "recommended": true,  "language": "English", "partner": "Adobe",     "program": "Certificate",  "availability": "Available",     "learningType": "In-person" },
+  { "id": 12, "title": "Lightroom Editing Workflow",    "categoryId": 6, "category": "Photography",  "duration": "1 Month", "description": "Organise, edit and export your photos faster with a repeatable workflow.",           "teacher": "Kenji Watanabe", "teacherImage": "https://i.pravatar.cc/150?img=18", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": false, "language": "Persian", "partner": "Adobe",     "program": "Short Course", "availability": "Starting Soon", "learningType": "Online" },
+  { "id": 13, "title": "Acting for Camera",             "categoryId": 7, "category": "Acting",       "duration": "2 Month", "description": "Adapt your acting to the screen with self-tapes and scene study.",                   "teacher": "Olivia Bennett", "teacherImage": "https://i.pravatar.cc/150?img=19", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/card1.svg", "recommended": false, "language": "English", "partner": "Udemy",     "program": "Diploma",      "availability": "Full",          "learningType": "In-person" },
+  { "id": 14, "title": "Voice and Speech Training",     "categoryId": 7, "category": "Acting",       "duration": "2 Month", "description": "Strengthen breath, tone and clarity with daily vocal exercises.",                    "teacher": "Olivia Bennett", "teacherImage": "https://i.pravatar.cc/150?img=19", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card2.svg", "recommended": false, "language": "Persian", "partner": "Udemy",     "program": "Short Course", "availability": "Available",     "learningType": "Self-paced" },
+  { "id": 15, "title": "Personal Finance Fundamentals", "categoryId": 8, "category": "Finance",      "duration": "2 Month", "description": "Budget, save and manage debt with a clear and simple plan.",                         "teacher": "Omar Haddad",    "teacherImage": "https://i.pravatar.cc/150?img=20", "oldPrice": 70,  "price": 49, "img": "./assets/img/Course/card3.png", "recommended": true,  "language": "English", "partner": "LinkedIn",  "program": "Certificate",  "availability": "Available",     "learningType": "Online" },
+  { "id": 16, "title": "Investing for Beginners",       "categoryId": 8, "category": "Finance",      "duration": "2 Month", "description": "Understand risk, diversification and long-term investing.",                          "teacher": "Omar Haddad",    "teacherImage": "https://i.pravatar.cc/150?img=20", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/card1.svg", "recommended": false, "language": "Persian", "partner": "Coursera",  "program": "Diploma",      "availability": "Starting Soon", "learningType": "Self-paced" }
 ],
-"development":[
 
-
-  { "id": 17, "title": "Time Management and Deep Focus",          "categoryId": 9, "category": "Personal Development", "duration": "1 Month", "description": "Build daily routines, eliminate distractions and plan realistic weekly priorities.",    "teacher": "Claire Bennett", "teacherImage": "https://i.pravatar.cc/150?img=21", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/development1.jpg",          "recommended": false },
-  { "id": 18, "title": "Effective Communication and Speaking",    "categoryId": 9, "category": "Personal Development", "duration": "2 Month", "description": "Express ideas clearly in meetings, presentations and everyday conversations.",       "teacher": "Claire Bennett", "teacherImage": "https://i.pravatar.cc/150?img=21", "oldPrice": 100, "price": 75, "img": "./assets/img/Course/development2.jpg",      "recommended": true  },
-  { "id": 19, "title": "Goal Setting and Habit Building",         "categoryId": 9, "category": "Personal Development", "duration": "1 Month", "description": "Turn long-term goals into steady daily habits with simple tracking systems.",        "teacher": "Liam Gallagher", "teacherImage": "https://i.pravatar.cc/150?img=22", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/development3.jpg",             "recommended": false },
-  { "id": 20, "title": "Critical Thinking and Self-Learning",     "categoryId": 9, "category": "Personal Development", "duration": "2 Month", "description": "Evaluate information objectively, question assumptions and learn independently.",      "teacher": "Liam Gallagher", "teacherImage": "https://i.pravatar.cc/150?img=22", "oldPrice": 110, "price": 79, "img": "./assets/img/Course/development4.jpg",  "recommended": true  },
-  { "id": 21, "title": "Problem Solving and Decision Making",     "categoryId": 9, "category": "Personal Development", "duration": "2 Month", "description": "Break down complex problems and make confident choices under uncertainty.",         "teacher": "Nadia Mansour",  "teacherImage": "https://i.pravatar.cc/150?img=23", "oldPrice": 95,  "price": 69, "img": "./assets/img/Course/development5.jpg",    "recommended": false },
-  { "id": 22, "title": "Resilience and Stress Management",        "categoryId": 9, "category": "Personal Development", "duration": "1 Month", "description": "Stay calm under pressure and recover steadily during demanding periods.",           "teacher": "Nadia Mansour",  "teacherImage": "https://i.pravatar.cc/150?img=23", "oldPrice": 85,  "price": 65, "img": "./assets/img/Course/development6.jpg",         "recommended": false }
+"development": [
+  { "id": 17, "title": "Time Management and Deep Focus",       "categoryId": 9, "category": "Personal Development", "duration": "1 Month", "description": "Build daily routines, eliminate distractions and plan realistic weekly priorities.", "teacher": "Claire Bennett", "teacherImage": "https://i.pravatar.cc/150?img=21", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/development1.jpg", "recommended": false, "language": "English", "partner": "Coursera",  "program": "Short Course", "availability": "Available",     "learningType": "Online" },
+  { "id": 18, "title": "Effective Communication and Speaking", "categoryId": 9, "category": "Personal Development", "duration": "2 Month", "description": "Express ideas clearly in meetings, presentations and everyday conversations.",    "teacher": "Claire Bennett", "teacherImage": "https://i.pravatar.cc/150?img=21", "oldPrice": 100, "price": 75, "img": "./assets/img/Course/development2.jpg", "recommended": true,  "language": "Persian", "partner": "LinkedIn",  "program": "Certificate",  "availability": "Starting Soon", "learningType": "In-person" },
+  { "id": 19, "title": "Goal Setting and Habit Building",      "categoryId": 9, "category": "Personal Development", "duration": "1 Month", "description": "Turn long-term goals into steady daily habits with simple tracking systems.",     "teacher": "Liam Gallagher", "teacherImage": "https://i.pravatar.cc/150?img=22", "oldPrice": 80,  "price": 59, "img": "./assets/img/Course/development3.jpg", "recommended": false, "language": "English", "partner": "Udemy",     "program": "Short Course", "availability": "Available",     "learningType": "Self-paced" },
+  { "id": 20, "title": "Critical Thinking and Self-Learning",  "categoryId": 9, "category": "Personal Development", "duration": "2 Month", "description": "Evaluate information objectively, question assumptions and learn independently.", "teacher": "Liam Gallagher", "teacherImage": "https://i.pravatar.cc/150?img=22", "oldPrice": 110, "price": 79, "img": "./assets/img/Course/development4.jpg", "recommended": true,  "language": "Persian", "partner": "Coursera",  "program": "Diploma",      "availability": "Full",          "learningType": "Online" },
+  { "id": 21, "title": "Problem Solving and Decision Making",  "categoryId": 9, "category": "Personal Development", "duration": "2 Month", "description": "Break down complex problems and make confident choices under uncertainty.",       "teacher": "Nadia Mansour",  "teacherImage": "https://i.pravatar.cc/150?img=23", "oldPrice": 95,  "price": 69, "img": "./assets/img/Course/development5.jpg", "recommended": false, "language": "English", "partner": "Microsoft", "program": "Certificate",  "availability": "Available",     "learningType": "In-person" },
+  { "id": 22, "title": "Resilience and Stress Management",     "categoryId": 9, "category": "Personal Development", "duration": "1 Month", "description": "Stay calm under pressure and recover steadily during demanding periods.",         "teacher": "Nadia Mansour",  "teacherImage": "https://i.pravatar.cc/150?img=23", "oldPrice": 85,  "price": 65, "img": "./assets/img/Course/development6.jpg", "recommended": false, "language": "Persian", "partner": "Google",    "program": "Short Course", "availability": "Starting Soon", "learningType": "Self-paced" }
 ],
+
 "studentViewing":[
   { "id": 3,  "title": "JavaScript from Zero to Hero",  "categoryId": 2, "category": "Development",          "duration": "3 Month", "description": "Master the fundamentals of JavaScript with hands-on projects.",                       "teacher": "Priya Nair",     "teacherImage": "https://i.pravatar.cc/150?img=13", "oldPrice": 90,  "price": 69, "img": "./assets/img/Course/recommend1.jpg",               "recommended": true  },
   { "id": 5,  "title": "Python for Data Analysis",      "categoryId": 3, "category": "Data Science",         "duration": "3 Month", "description": "Clean, explore and visualise real datasets with pandas and Matplotlib.",              "teacher": "Elena Petrova",  "teacherImage": "https://i.pravatar.cc/150?img=15", "oldPrice": 100, "price": 79, "img": "./assets/img/Course/recommend4.jpg",               "recommended": true  },

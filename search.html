@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/output.css">
+
+
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+
+    <section class="hero-search px-[298px] py-[80px]"
+        style="background-image: url(./assets/img/search/hero-search.svg);">
+
+        <div>
+            <form class="bg-white rounded-[10px] h-[73px] flex flex-row justify-between items-center  pe-[6px]">
+                <input type="text" placeholder="Search your favourite course"
+                    class="flex-1 min-w-0 bg-transparent bg-white outline-none ... placeholder:text-[#B2B3CF] ps-[34px]">
+                <button class="text-white  bg-[#49BBBD] h-[63px]  rounded-[12px] px-[41px] text-[24px] font-bold "
+                    type="submit">Search</button>
+            </form>
+            <div class="mt-4 flex flex-row gap-[20px]">
+                <select id="subject" class="select select-bordered w-full">
+                    <option value="">Subject</option>
+                    <option value="web">Web</option>
+                    <option value="design">Design</option>
+                </select>
+
+                <select id="language" class="select select-bordered w-full">
+                    <option value="">Language</option>
+                    <option value="en">English</option>
+                    <option value="fa">Persian</option>
+                </select>
+
+                <select id="learningType" class="select select-bordered w-full">
+                    <option value="">Learning Type</option>
+                    <option value="online">Online</option>
+                    <option value="offline">Offline</option>
+                </select>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="cards-search">
+
+
+
+    </section>
+    <section
+        class="know-search  py-10 md:py-12 xl:py-16 mt-12 md:mt-16 xl:mt-20 2xl:mt-24 w-[90%] md:w-[85%] xl:w-[83%] mx-auto bg-[#9DCCFF]/20  rounded-[20px] px-[130px]">
+        <div
+            class="container-ui w-full px-3 flex flex-col  lg:flex-row justify-between items-center gap-8 md:gap-8 xl:gap-11">
+            <div class="know-search-text w-full  md:w-[100%] flex flex-col gap-[25px]">
+                <h5 class="text-[#252641] text-[30px] font-semibold max-w-[330px]">
+                    Know about learning learning platform
+                </h5>
+                <ol>
+                    <li class="text-[#2D3436] text-[18px]">Free E-book, video & consolation</li>
+                    <li class="text-[#2D3436] text-[18px]">Top instructors from around world</li>
+                    <li class="text-[#2D3436] text-[18px]">Top courses from your team</li>
+                </ol>
+                <button class="bg-[#49BBBD] rounded-[12px] max-w-[309px] font-bold px-[39px] py-[16px] text-white">Start
+                    learning now</button>
+            </div>
+
+            <div class="ui-media relative w-full md:w-[100%]   aspect-[430/305]">
+
+                <div
+                    class="absolute left-[2%] top-[11%] w-[84%] h-[72%] bg-gray-100 rounded-xl 2xl:rounded-[20px] ui-media-details">
+                </div>
+
+                <img src="./assets/img/img-home/eveny.svg" alt="Instructor"
+                    class="absolute left-[11%] top-[25%] w-[27%]">
+
+                <div class="absolute left-[7%] top-[68%] flex flex-row gap-2 md:gap-3 xl:gap-4">
+                    <button
+                        class="rounded-full px-3 md:px-4 xl:px-6 bg-[#3465E1] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Present</button>
+                    <button
+                        class="rounded-full flex flex-row-reverse items-center justify-center gap-1.5 px-3 md:px-4 xl:px-6 bg-[#E13468] text-white text-xs md:text-sm xl:text-lg 2xl:text-[22px]">Call
+                        <img src="./assets/img/img-home/phone 1.svg" alt="">
+                    </button>
+                </div>
+
+                <img src="./assets/img/img-home/tamara.svg" alt="Tamara" class="absolute left-[51%] top-[25%] w-[18%]">
+                <img src="./assets/img/img-home/humbert.svg" alt="Humbert"
+                    class="absolute left-[51%] top-[53%] w-[18%]">
+
+                <img src="./assets/img/img-home/adam.svg" alt="Adam" class="absolute left-[77%] top-[19%] w-[22%]">
+                <img src="./assets/img/img-home/patrica.svg" alt="Patricia"
+                    class="absolute left-[72%] top-[60%] w-[26%]">
+                <img src="./assets/img/img-home/circle22.svg"
+                    class="absolute  sm:top-[50%] right-[42%] 2xl:top-[47%] right-[42%] w-[93px]" alt="">
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <div id="footer-placeholder"></div>
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/header.js"></script>
+
+</body>
+
+</html>
