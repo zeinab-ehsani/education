@@ -1,9 +1,26 @@
-document.getElementById("#header-placeholder").innerHTML=`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("header-placeholder").innerHTML=`
+
 
     <!-- start menu light-->
-    <section class="menu-light px-4 md:px-8 xl:px-16 2xl:px-[120px]">
+    <section class="menu-light">
 
-        <div class="navbar bg-[#ffffff] justify-between">
+        <div class="navbar bg-white justify-between w-full  px-4 md:px-8 xl:px-16 2xl:px-[120px]">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -13,7 +30,7 @@ document.getElementById("#header-placeholder").innerHTML=`
                     </svg>
                 </div>
                 <ul tabindex="-1"
-                    class="menu menu-sm dropdown-content bg-[#ffffff] rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    class="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li><a href="./index.html">Home</a></li>
 
                     <li><a>Courses</a></li>
@@ -43,7 +60,7 @@ document.getElementById("#header-placeholder").innerHTML=`
           <button tabindex="0" class="btn btn-ghost btn-circle btn-sm md:btn-md" aria-label="Change theme">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="swap-off lucide lucide-sun preview-icon text-black ">
+              class="swap-off lucide lucide-sun preview-icon  ">
               <circle cx="12" cy="12" r="4" />
               <path d="M12 2v2" />
               <path d="M12 20v2" />
@@ -67,7 +84,7 @@ document.getElementById("#header-placeholder").innerHTML=`
                 <button tabindex="0" class="btn btn-ghost btn-circle btn-sm md:btn-md" aria-label="Change theme">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-globe preview-icon text-black">
+                        class="lucide lucide-globe preview-icon ">
                         <circle cx="12" cy="12" r="10" />
                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                         <path d="M2 12h20" />
@@ -119,3 +136,54 @@ document.getElementById("#header-placeholder").innerHTML=`
 
 
 `
+
+
+
+
+
+let pairs = [
+  ["bg-white", "bg-[#0A0A0A]"],
+
+  // ["bg-white", "bg-[#161A20]"],
+  ["bg-bg-blue", "bg-[#1B2A41]"],
+  ["text-dark2", "text-[#f5f5f5]"],
+  ["text-dark", "text-[#ff1493]"],
+
+  // ["text-dark", "text-[#f5f5f5]"],
+  ["text-[#010514]", "text-[#f5f5f5]"],
+  ["text-[#010514CC]", "text-[#f5f5f5CC]"],
+
+  //  ["text-white", "text-[#ff1493]"],
+
+  ["text-white", "text-[#161A20]"],
+  ["text-[#252641]", "text-[#f5f5f5]"],  
+["text-[#696984]", "text-[#b8b8c8]"],   
+["text-[#5F5F7E]", "text-[#b8b8c8]"],
+["bg-[#252641]", "bg-[#161A20]"],
+]
+
+
+let dark=document.querySelector("#dark")
+let header=document.querySelector("header")
+let groups = pairs.map(function (pair) {
+  return document.querySelectorAll("." + CSS.escape(pair[0]))
+
+
+})
+
+dark.addEventListener("click", function () {
+  document.documentElement.setAttribute("data-theme", "dark")
+//   header.style.backgroundImage="url('assets/img/img-home/header.dark3.png')"
+  pairs.forEach(function (pair, i) {
+    groups[i].forEach(el => el.classList.replace(pair[0], pair[1]))
+  })
+})
+
+light.addEventListener("click", function () {
+  document.documentElement.setAttribute("data-theme", "light")
+//   header.style.backgroundImage="url('assets/img/img-home/Header\ \(1\)new.svg')"
+  pairs.forEach(function (pair, i) {
+    groups[i].forEach(el => el.classList.replace(pair[1], pair[0]))
+  })
+})
+

@@ -4,9 +4,21 @@
 
 
   <!-- start footer -->
+<button id="scroll-top" aria-label="Back to top"
+  class="btn btn-circle btn-sm md:btn-md 2xl:btn-lg fixed z-50
+         bottom-4 right-4 md:bottom-6 md:right-6 2xl:bottom-10 2xl:right-10
+         bg-[#49BBBD] hover:bg-[#7ECCCE] text-[#ffffff] border-none shadow-lg
+         opacity-0 pointer-events-none transition-opacity duration-300
+         dark:hover:shadow-[0_0_20px_#ff1493]">
+  <svg class="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+    <path d="M18 15l-6-6-6 6" />
+  </svg>
+</button>
+
+
 
   <footer
-    class="mt-12 md:mt-20 xl:mt-24 2xl:mt-28.75 w-full text-center bg-[#252641] pt-10 md:pt-14 2xl:pt-18.5 pb-6 md:pb-8 2xl:pb-10">
+    class=" w-full text-center bg-[#252641] pt-10 md:pt-14 2xl:pt-18.5 pb-6 md:pb-8 2xl:pb-10">
     <div
       class="flex flex-col justify-center text-center w-11/12 md:w-3/4 xl:w-1/2 mx-auto gap-10 md:gap-16 xl:gap-20 2xl:gap-24">
 
@@ -114,5 +126,15 @@ else{
 })
 
 
+const scrollBtn = document.getElementById("scroll-top")
 
+window.addEventListener("scroll", function () {
+  const show = window.scrollY > 400
+  scrollBtn.classList.toggle("opacity-0", !show)
+  scrollBtn.classList.toggle("pointer-events-none", !show)
+})
+
+scrollBtn.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" })
+})
 
