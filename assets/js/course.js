@@ -82,7 +82,7 @@ let showeDetaCategory = () => {
       document.querySelector("div.category").innerHTML += `
   
 <a href="./search.html" class="card-category w-full sm:w-[calc((100%_-_var(--gap))/2)] lg:w-[calc((100%_-_3*var(--gap))/4)]
-            bg-white rounded-[20px] flex flex-col justify-center items-center gap-2 md:gap-3 p-4 md:p-6 2xl:p-[30px] shadow text-center">
+            bg-white dark:shadow-[0_0_0_1px_#ff1493,0_0_8px_#ff1493,0_0_20px_#ff149388,0_0_40px_#ff149344] rounded-[20px] flex flex-col justify-center items-center gap-2 md:gap-3 p-4 md:p-6 2xl:p-[30px] shadow text-center">
 
   <div class="flex items-center justify-center rounded-[4px] w-14 h-14 md:w-[70px] md:h-[70px] xl:w-20 xl:h-20 2xl:w-[90px] 2xl:h-[90px]"
        style="background-color:${elem.color}">
@@ -208,7 +208,7 @@ xml.response.forEach((elem)=>{
   `
   
    <a href="./course-detail.html?id=${elem.id}" class="swiper-slide h-auto swiper-slide !h-auto !flex">
-    <div class="h-full bg-white rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex flex-col gap-2 md:gap-3">
+    <div class="h-full bg-white dark:bg-[#0A0A0A] dark:border dark:border-[#00e5d4] rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex flex-col gap-2 md:gap-3">
 
       <img class="w-full rounded-[15px] aspect-[4/3] object-cover" src="${elem.img}" alt="${elem.title}">
 
@@ -295,9 +295,9 @@ xml.response.forEach((elem)=>{
   `
   
    <a href="./course-detail.html?id=${elem.id}" class="swiper-slide h-auto swiper-slide !h-auto !flex ">
-    <div class="h-full bg-white rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0px_19px_47px_#2F327D1A] dark:shadow-none flex flex-col gap-2 md:gap-3">
+    <div class="h-full bg-white dark:bg-[#0A0A0A] dark:border dark:border-[#00e5d4] rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0px_19px_47px_#2F327D1A]  flex flex-col gap-2 md:gap-3">
 
-      <img class="w-full rounded-[15px] aspect-[4/3] object-cover" src="${elem.img}" alt="${elem.title}">
+      <img class="w-full rounded-[15px] aspect-[4/3] object-cover transition-all duration-500 ease-out hover:scale-105" src="${elem.img}" alt="${elem.title}">
 
       <div class="flex items-center justify-between text-[10px] md:text-xs 2xl:text-sm text-[#696984]">
         <span class="flex items-center gap-1">
@@ -379,9 +379,9 @@ xml.response.forEach((elem)=>{
   `
   
    <a href="./course-detail.html?id=${elem.id}" class="swiper-slide h-auto swiper-slide !h-auto !flex  ">
-    <div class="h-full bg-white dark:bg-[#0A0A0A] rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0px_19px_47px_#2F327D1A] dark:shadow-none flex flex-col gap-2 md:gap-3 ">
+    <div class="h-full bg-white dark:bg-[#0A0A0A]  rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0px_19px_47px_#2F327D1A] dark:shadow-none flex flex-col gap-2 md:gap-3 ">
 
-      <img class="w-full rounded-[15px] aspect-[4/3] object-cover" src="${elem.img}" alt="${elem.title}">
+      <img class="w-full rounded-[15px] aspect-[4/3] object-cover transition-all duration-500 ease-out hover:scale-105" src="${elem.img}" alt="${elem.title}">
 
       <div class="flex items-center justify-between text-[10px] md:text-xs 2xl:text-sm text-[#696984] dark:text-[#b8b8c8]">
         <span class="flex items-center gap-1">
@@ -404,7 +404,7 @@ xml.response.forEach((elem)=>{
 
       <div class="mt-auto flex items-center justify-between">
         <span class="flex items-center gap-2">
-          <img class="w-6 h-6 md:w-7 md:h-7 2xl:w-9 2xl:h-9 rounded-full" src="${elem.teacherImage}" alt="${elem.teacher}">
+          <img class="w-6 h-6 md:w-7 md:h-7 2xl:w-9 2xl:h-9 rounded-full transition-all duration-500 ease-out hover:scale-110" src="${elem.teacherImage}" alt="${elem.teacher}">
           <span class="text-xs md:text-sm 2xl:text-base text-[#252641] dark:text-[#f5f5f5]">${elem.teacher}</span>
         </span>
         <span class="flex items-baseline gap-2">

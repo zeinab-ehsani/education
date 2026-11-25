@@ -18,14 +18,14 @@
 
 
   <footer
-    class=" w-full text-center bg-[#252641] pt-10 md:pt-14 2xl:pt-18.5 pb-6 md:pb-8 2xl:pb-10">
+    class=" w-full text-center bg-[#252641] dark:bg-[#161A20] pt-10 md:pt-14 2xl:pt-18.5 pb-6 md:pb-8 2xl:pb-10">
     <div
       class="flex flex-col justify-center text-center w-11/12 md:w-3/4 xl:w-1/2 mx-auto gap-10 md:gap-16 xl:gap-20 2xl:gap-24">
 
       <div class="flex flex-row justify-center items-center gap-6 md:gap-10 xl:gap-14 2xl:gap-20">
         <img class="w-20 md:w-24 2xl:w-28.5" src="./assets/img/img-home/logo-footer.svg" alt="">
         <span
-          class="text-sm md:text-base xl:text-xl 2xl:text-[22px] text-white font-bold ps-5 md:ps-7 2xl:ps-10 border-s-2 tracking-wider">Virtual
+          class="text-sm md:text-base xl:text-xl 2xl:text-[22px] text-white dark:text-[#ffffff] font-bold ps-5 md:ps-7 2xl:ps-10 border-s-2 tracking-wider">Virtual
           Class
           <br>
           for Zoom</span>

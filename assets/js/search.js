@@ -21,9 +21,9 @@ function render(products){
         container.innerHTML+=`
           <a href="./course-detail.html?id=${elem.id}"
    class="flex-none w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-13.34px)] xl:w-[calc(25%-15px)]">
-    <div class="h-full bg-white rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0px_19px_47px_#2F327D1A] dark:shadow-none flex flex-col gap-2 md:gap-3">
+    <div class="h-full bg-white dark:bg-[#0A0A0A]  rounded-[20px] p-3 md:p-4 2xl:p-[18px] shadow-[0px_19px_47px_#2F327D1A] dark:shadow-none flex flex-col gap-2 md:gap-3">
 
-      <img class="w-full rounded-[15px] aspect-[4/3] object-cover" src="${elem.img}" alt="${elem.title}">
+      <img class="w-full rounded-[15px] aspect-[4/3] object-cover transition-all duration-500 ease-out hover:scale-105" src="${elem.img}" alt="${elem.title}">
 
       <div class="flex items-center justify-between text-[10px] md:text-xs 2xl:text-sm text-[#696984]">
         <span class="flex items-center gap-1">
@@ -41,12 +41,12 @@ function render(products){
         </span>
       </div>
 
-      <h3 class="text-base md:text-lg 2xl:text-xl font-medium text-[#252641]">${elem.title}</h3>
-      <p class="text-xs md:text-sm 2xl:text-base text-[#696984] line-clamp-3">${elem.description}</p>
+      <h3 class="text-base md:text-lg 2xl:text-xl font-medium  text-[#252641] dark:text-[#f5f5f5]">${elem.title}</h3>
+      <p class="text-xs md:text-sm 2xl:text-base  text-[#696984] dark:text-[#b8b8c8] line-clamp-3">${elem.description}</p>
 
       <div class="mt-auto flex items-center justify-between">
         <span class="flex items-center gap-2">
-          <img class="w-6 h-6 md:w-7 md:h-7 2xl:w-9 2xl:h-9 rounded-full" src="${elem.teacherImage}" alt="${elem.teacher}">
+          <img class="w-6 h-6 md:w-7 md:h-7 2xl:w-9 2xl:h-9 rounded-full transition-all duration-500 ease-out hover:scale-105" src="${elem.teacherImage}" alt="${elem.teacher}">
           <span class="text-xs md:text-sm 2xl:text-base text-[#252641]">${elem.teacher}</span>
         </span>
         <span class="flex items-baseline gap-2">
