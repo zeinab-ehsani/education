@@ -194,3 +194,45 @@ let showeDatatecher=()=>{
   xml.send(null)
 }
 showeDatatecher()
+
+
+
+// start section offers-list
+
+let showeDataoffers=()=>{
+  let xml=new XMLHttpRequest()
+
+  xml.open("get","http://localhost:3000/courses")
+  xml.responseType="json"
+  xml.onload=()=>{
+    xml.response.slice(0,3).forEach((elem)=>{
+      document.querySelector("div.offers-list").innerHTML+=`
+      <a href="course-detail.html?id=${elem.id}"
+   class="block  h-72 w-full max-w-md shrink-0 overflow-hidden rounded-[20px] bg-cover bg-center sm:h-80 sm:w-[calc(50%-0.75rem)] sm:max-w-none lg:h-64 lg:w-[calc(33.333%-1rem)] xl:h-72 2xl:h-[420px] transition-all duration-500 ease-out hover:scale-105"
+   style="background-image: url('${elem.img}');">
+
+  <div class="flex h-full flex-col  bg-black/40 p-8 text-white lg:p-5 xl:p-6 2xl:p-10 ">
+    <span class="flex h-20 w-20 shrink-0 items-center justify-center rounded-[10px] bg-[#4DBFBA] text-[32px] font-semibold lg:h-14 lg:w-14 lg:text-2xl xl:h-16 xl:w-16 xl:text-[28px] 2xl:h-24 2xl:w-24 2xl:text-[40px]">${elem.count}%</span>
+    <p class="mt-6 text-xl font-semibold lg:mt-4 lg:text-base xl:mt-5 xl:text-lg 2xl:text-2xl mt-[20px]">${elem.title}</p>
+    <p class="mt-2 line-clamp-4 text-sm lg:text-xs xl:text-[13px] 2xl:text-base">${elem.description}</p>
+  </div>
+</a>
+
+
+
+
+      
+      `
+    })
+  }
+  xml.onerror=()=>{
+
+
+    console.log("errore")
+  }
+  xml.send(null)
+}
+
+showeDataoffers()
+
+// end section offers-list
