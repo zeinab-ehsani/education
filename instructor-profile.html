@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instructor-profile</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <section class="px-4 md:px-10 xl:px-[120px]">
+
+<section class="hero-teacher rounded-[20px] " style="background-image: url(./assets/img/instructor-profile/hero.svg); background-position: center; background-size: cover;">
+<section class="flex flex-col items-center gap-4 overflow-hidden rounded-2xl bg-cover bg-center p-4 md:flex-row md:gap-8 md:p-8"
+         style="background-image: url('./images/instructors/john-anderson-cover.jpg')">
+
+  <!-- Avatar -->
+  <div class="shrink-0">
+<img class="h-32 w-32 rounded-full border border-[10px] border-white object-cover  ring-[#4FC3C3] md:h-44 md:w-44"
+     src="./assets/img/instructor-profile/jhone.svg"
+     alt="John Anderson">    
+    </div>
+
+  <!-- Info card -->
+  <div class="flex w-full flex-1 flex-col gap-3 rounded-xl bg-white/60 p-4 shadow backdrop-blur-sm md:p-6">
+
+    <div class="flex flex-wrap items-start justify-between gap-3">
+      <div class="flex flex-col gap-[8px]">
+        <h1 class="text-lg font-semibold md:text-xl">John Anderson</h1>
+        <p class="text-xs  text-gray-500">Assistant Professor at Mcmaster University</p>
+      </div>
+      <a href="#" class="btn btn-sm border-none bg-[#49BBBD] px-5 text-white hover:bg-[#3aa9a9]">
+        Enroll Now
+      </a>
+    </div>
+
+    <p class="text-sm text-gray-700">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      utlabore et dolore magna aliqua. Ut enum ad minim veniam, quis nostrud
+    </p>
+
+    <div class="flex flex-wrap items-center justify-between gap-3 text-xs text-gray-600">
+      <div class="flex flex-wrap items-center gap-4 md:gap-16">
+        <span class="flex items-center gap-1">
+          <i class="fa-regular fa-star"></i> 4.9 Instructor Rating
+        </span>
+        <span class="flex items-center gap-1">
+          <i class="fa-regular fa-eye"></i> 1,592 Students
+        </span>
+        <span class="flex items-center gap-1">
+          <i class="fa-regular fa-circle-play"></i> 6 Courses
+        </span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="#" class="flex h-5 w-5 items-center justify-center rounded-full bg-[#49BBBD] text-[10px] text-white">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="flex h-5 w-5 items-center justify-center rounded-full bg-[#49BBBD] text-[10px] text-white">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#" class="flex h-5 w-5 items-center justify-center rounded-full bg-[#49BBBD] text-[10px] text-white">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+<div id="tabs" class="flex flex-wrap gap-2 mt-8 md:mt-12 xl:mt-[68px] ">
+  <button data-tab="about"    class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">About</button>
+  <button data-tab="courses"  class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">Course</button>
+  <button data-tab="notes"    class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">Notes</button>
+  <button data-tab="projects" class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">Project</button>
+  <button data-tab="podcasts" class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">Podcast</button>
+  <button data-tab="books"    class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">Book</button>
+  <button data-tab="reviews"  class="tab-btn btn btn-sm border-none bg-gray-200 px-6 text-gray-600">Review</button>
+</div>
+
+<div id="tab-content" class="pt-6"></div>
+
+    </section>
+
+<div class="px-4 md:px-10 xl:px-[120px]">
+  <h1 class="mb-6 text-xl font-medium md:mb-8 md:text-2xl xl:mb-[50px] xl:text-[30px]">
+    Literature course
+  </h1>
+</div>
+
+<section class="books-techer1">
+
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="join">
+  <button class="join-item btn">«</button>
+ <button class="join-item btn btn-md btn-techer1">1</button>
+  <button class="join-item btn btn-md btn-active btn-techer2">2</button>
+  <button class="join-item btn btn-md btn-techer3">3</button>
+  <button class="join-item btn btn-md btn-techer4">4</button> 
+    <button class="join-item btn btn-md btn-techer5">5</button> 
+
+  <button class="join-item btn">»</button>
+</div>
+
+    <div id="footer-placeholder"></div>
+
+
+
+
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/header.js"></script>
+
+
+</body>
+
+</html>

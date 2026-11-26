@@ -1339,7 +1339,52 @@
       "image": "./assets/img/search/adam2.svg",
       "description": "Business and marketing coach for freelancers and online creators."
     }
-  ]
+  ],
+  "booksTeacher1": [
+  {
+    "id": 1,
+    "instructorId": 1,
+    "title": "Build Your Dream Network",
+    "image": "./assets/img/books/build-your-dream-network.jpg",
+    "price": 24
+  },
+  {
+    "id": 2,
+    "instructorId": 1,
+    "title": "Visible Learning for Literacy",
+    "image": "./assets/img/books/visible-learning.jpg",
+    "price": 24
+  },
+  {
+    "id": 3,
+    "instructorId": 1,
+    "title": "The New Rules of Work",
+    "image": "./assets/img/books/new-rules-of-work.jpg",
+    "price": 24
+  },
+  {
+    "id": 4,
+    "instructorId": 1,
+    "title": "Pivot",
+    "image": "./assets/img/books/pivot.jpg",
+    "price": 24
+  },
+  {
+    "id": 5,
+    "instructorId": 1,
+    "title": "Learning & Development",
+    "image": "./assets/img/books/learning-and-development.jpg",
+    "price": 24
+  },
+  {
+    "id": 6,
+    "instructorId": 1,
+    "title": "Visible Learning Workbook",
+    "image": "./assets/img/books/visible-learning-workbook.jpg",
+    "price": 24
+  }
+]
+  
 }
 
  
