@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instructors</title>
+    <link rel="stylesheet" href="./src/output.css">
+
+
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+        <section class="instructors px-[140px]">
+
+
+        <div class="flex flex-row justify-between -[#9DCCFF]/20  mt-8  ">
+            <h5 class="text-[30px] font-medium">Classes tought by real creators</h5>
+        </div>
+        <div class="instructors-details flex flex-row  mt-[100px] flex-wrap instructors-details flex flex-wrap justify-center gap-x-6 gap-y-24 pb-16 pt-24 md:pt-[70px]">
+          
+        </div>
+
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/header.js"></script>
+<script>
+    let showeDatatecher=()=>{
+  let xml=new XMLHttpRequest()
+  xml.open("get","http://localhost:3000/instructors")
+  xml.responseType="json"
+  xml.onload=()=>{
+    xml.response.forEach((elem)=>{
+      document.querySelector("div.instructors-details ").innerHTML+=`
+      
+      <a href="" class="block w-full max-w-sm sm:w-[calc(50%-0.75rem)] sm:max-w-none lg:w-[calc(33.333%-1rem)]">
+            <div
+                class="relative bg-white px-4 pb-6 pt-[70px] text-center shadow-[0_0_4px_rgba(0,0,0,0.25)] md:px-6 md:pb-8 md:pt-20 xl:pt-[88px]">
+                <img src=${elem.image} alt=${elem.name}
+                    class="absolute left-1/2 top-0 h-[100px] w-[100px] -translate-x-1/2 -translate-y-1/2 object-cover md:h-[120px] md:w-[120px] xl:h-[138px] xl:w-[138px]" />
+                <h1 class="name-techer text-[24px] text-[#252641] font-medium">${elem.name}</h1>
+                <p class="text-[18px] text-[#696984]">
+                ${elem.description}
+                    
+                    </p>
+            </div>
+            </a>
+      
+      
+      `
+    })
+  }
+
+
+  xml.onerror=()=>{
+
+    console.log("errore")
+  }
+  xml.send(null)
+}
+showeDatatecher()
+</script>
+</body>
+</html>
