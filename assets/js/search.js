@@ -158,3 +158,39 @@ const recommendSwiper = new Swiper('.recommend-swiper', {
   },
 
 });
+// start techer section js
+
+let showeDatatecher=()=>{
+  let xml=new XMLHttpRequest()
+  xml.open("get","http://localhost:3000/instructors")
+  xml.responseType="json"
+  xml.onload=()=>{
+    xml.response.slice(0, 6).forEach((elem)=>{
+      document.querySelector("div.instructors-details ").innerHTML+=`
+      
+      <a href="" class="block w-full max-w-sm sm:w-[calc(50%-0.75rem)] sm:max-w-none lg:w-[calc(33.333%-1rem)]">
+            <div
+                class="relative bg-white px-4 pb-6 pt-[70px] text-center shadow-[0_0_4px_rgba(0,0,0,0.25)] md:px-6 md:pb-8 md:pt-20 xl:pt-[88px]">
+                <img src=${elem.image} alt=${elem.name}
+                    class="absolute left-1/2 top-0 h-[100px] w-[100px] -translate-x-1/2 -translate-y-1/2 object-cover md:h-[120px] md:w-[120px] xl:h-[138px] xl:w-[138px]" />
+                <h1 class="name-techer text-[24px] text-[#252641] font-medium">${elem.name}</h1>
+                <p class="text-[18px] text-[#696984]">
+                ${elem.description}
+                    
+                    </p>
+            </div>
+            </a>
+      
+      
+      `
+    })
+  }
+
+
+  xml.onerror=()=>{
+
+    console.log("errore")
+  }
+  xml.send(null)
+}
+showeDatatecher()

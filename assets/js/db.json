@@ -1283,6 +1283,62 @@
       "recommended": false,
       "section": "development"
     }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Jane Cooper",
+      "image": "./assets/img/search/jane.svg",
+      "description": "Senior web designer with 8 years of experience in UI and front-end."
+    },
+    {
+      "id": 2,
+      "name": "Adam",
+      "image": "./assets/img/search/adam2.svg",
+      "description": "Front-end developer who loves teaching HTML, CSS and JavaScript."
+    },
+    {
+      "id": 3,
+      "name": "Tomara",
+      "image": "./assets/img/search/tomara2.svg",
+      "description": "UX specialist focused on clean and user-friendly interfaces."
+    },
+    {
+      "id": 4,
+      "name": "Sara Williams",
+      "image": "./assets/img/search/alex.png",
+      "description": "Teaches practical design courses with real projects for beginners."
+    },
+    {
+      "id": 5,
+      "name": "Daniel Brown",
+      "image": "./assets/img/search/adam2.svg",
+      "description": "Helps students build real websites, step by step, from scratch."
+    },
+    {
+      "id": 6,
+      "name": "Emily Davis",
+      "image": "./assets/img/search/adam2.svg",
+      "description": "Literature and writing instructor with a passion for storytelling."
+    },
+    {
+      "id": 7,
+      "name": "Michael Smith",
+      "image": "./assets/img/search/adam2.svg",
+      "description": "Full-stack developer teaching JavaScript, APIs and modern web tools."
+    },
+    {
+      "id": 8,
+      "name": "Olivia Johnson",
+      "image": "./assets/img/search/adam2.svg",
+      "description": "Graphic designer sharing color, typography and branding skills."
+    },
+    {
+      "id": 9,
+      "name": "James Wilson",
+      "image": "./assets/img/search/adam2.svg",
+      "description": "Business and marketing coach for freelancers and online creators."
+    }
   ]
 }
 
