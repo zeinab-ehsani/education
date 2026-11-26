@@ -1345,42 +1345,42 @@
     "id": 1,
     "instructorId": 1,
     "title": "Build Your Dream Network",
-    "image": "./assets/img/books/build-your-dream-network.jpg",
+    "image": "./assets/img/instructor-profile/book-techer1.svg",
     "price": 24
   },
   {
     "id": 2,
     "instructorId": 1,
     "title": "Visible Learning for Literacy",
-    "image": "./assets/img/books/visible-learning.jpg",
+    "image": "./assets/img/instructor-profile/book-techer2.svg",
     "price": 24
   },
   {
     "id": 3,
     "instructorId": 1,
     "title": "The New Rules of Work",
-    "image": "./assets/img/books/new-rules-of-work.jpg",
+    "image": "./assets/img/instructor-profile/book-techer3.svg",
     "price": 24
   },
   {
     "id": 4,
     "instructorId": 1,
     "title": "Pivot",
-    "image": "./assets/img/books/pivot.jpg",
+    "image": "./assets/img/instructor-profile/book-techer4.svg",
     "price": 24
   },
   {
     "id": 5,
     "instructorId": 1,
     "title": "Learning & Development",
-    "image": "./assets/img/books/learning-and-development.jpg",
+    "image": "./assets/img/instructor-profile/book-techer5.svg",
     "price": 24
   },
   {
     "id": 6,
     "instructorId": 1,
     "title": "Visible Learning Workbook",
-    "image": "./assets/img/books/visible-learning-workbook.jpg",
+    "image": "./assets/img/instructor-profile/book-techer6.svg",
     "price": 24
   }
 ]
