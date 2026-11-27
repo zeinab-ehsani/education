@@ -1423,6 +1423,48 @@
   "title": "Grit",
   "image": "./assets/img/instructor-profile/book-techer1-12.jpg",
   "price": 24
+},
+{
+  "id": 13,
+  "instructorId": 1,
+  "title": "Thinking, Fast and Slow",
+  "image": "./assets/img/instructor-profile/book13.jpg",
+  "price": 24
+},
+{
+  "id": 14,
+  "instructorId": 1,
+  "title": "Range",
+  "image": "./assets/img/instructor-profile/book14.jpg",
+  "price": 24
+},
+{
+  "id": 15,
+  "instructorId": 1,
+  "title": "Educated",
+  "image": "./assets/img/instructor-profile/book15.jpg",
+  "price": 24
+},
+{
+  "id": 16,
+  "instructorId": 1,
+  "title": "Quiet",
+  "image": "./assets/img/instructor-profile/book16.jpg",
+  "price": 24
+},
+{
+  "id": 17,
+  "instructorId": 1,
+  "title": "Outliers",
+  "image": "./assets/img/instructor-profile/book117.jpg",
+  "price": 24
+},
+{
+  "id": 18,
+  "instructorId": 1,
+  "title": "The Power of Habit",
+  "image": "./assets/img/instructor-profile/book18.jpg",
+  "price": 24
 }
 ]
   

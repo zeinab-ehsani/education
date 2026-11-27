@@ -2849,6 +2849,9 @@
   .border-s-\[\#F67766\] {
     border-inline-start-color: #F67766;
   }
+  .\!bg-\[\#49BBBD\] {
+    background-color: #49BBBD !important;
+  }
   .bg-\[\#0A0A0A\] {
     background-color: #0A0A0A;
   }
@@ -2887,6 +2890,9 @@
   }
   .bg-\[\#33EFA0\] {
     background-color: #33EFA0;
+  }
+  .bg-\[\#49BBBD33\] {
+    background-color: #49BBBD33;
   }
   .bg-\[\#49BBBD99\] {
     background-color: #49BBBD99;
@@ -3357,6 +3363,12 @@
   }
   .text-\[\#5F5F7E\] {
     color: #5F5F7E;
+  }
+  .text-\[\#49BBBD33\] {
+    color: #49BBBD33;
+  }
+  .text-\[\#49BBBDCC\] {
+    color: #49BBBDCC;
   }
   .text-\[\#49BBBD\] {
     color: #49BBBD;
