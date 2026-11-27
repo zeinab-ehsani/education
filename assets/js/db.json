@@ -1382,7 +1382,48 @@
     "title": "Visible Learning Workbook",
     "image": "./assets/img/instructor-profile/book-techer6.svg",
     "price": 24
-  }
+  },{
+  "id": 7,
+  "instructorId": 1,
+  "title": "Atomic Habits",
+  "image": "./assets/img/instructor-profile/book-teacher1-7.jpg",
+  "price": 24
+},
+{
+  "id": 8,
+  "instructorId": 1,
+  "title": "Deep Work",
+  "image": "./assets/img/instructor-profile/bppk-teacher1-8.jpg",
+  "price": 24
+},
+{
+  "id": 9,
+  "instructorId": 1,
+  "title": "Drive",
+  "image": "./assets/img/instructor-profile/book-teacher1-9jpg.jpg",
+  "price": 24
+},
+{
+  "id": 10,
+  "instructorId": 1,
+  "title": "Mindset",
+  "image": "./assets/img/instructor-profile/book-techer1-10.jpg",
+  "price": 24
+},
+{
+  "id": 11,
+  "instructorId": 1,
+  "title": "Make It Stick",
+  "image": "./assets/img/instructor-profile/bppk-techer1-11.jpg",
+  "price": 24
+},
+{
+  "id": 12,
+  "instructorId": 1,
+  "title": "Grit",
+  "image": "./assets/img/instructor-profile/book-techer1-12.jpg",
+  "price": 24
+}
 ]
   
 }
